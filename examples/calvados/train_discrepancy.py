@@ -12,7 +12,7 @@ import torch
 from bff.bayes.fit import fit_surrogates
 from bff.io.logs import Logger
 from bff.qoi.dataset import QoIDataset
-from examples.calvados.fetch_data import COMMIT, RAW, verified_bytes
+from fetch_data import COMMIT, RAW, verified_bytes
 
 SEED = 2026
 TEST_FRACTION = 0.2
