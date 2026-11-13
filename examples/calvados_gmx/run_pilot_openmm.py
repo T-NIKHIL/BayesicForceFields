@@ -1,4 +1,5 @@
-"""CALVADOS2 pilot in OpenMM: Hst5 at the M1_24 optimized lambdas.
+"""CALVADOS2 pilot in OpenMM: the protein PROTEIN_ID (default "CTD2") at
+the M1_24 optimized lambdas.
 
 Reproduces upstream simulate.py (HOOMD + azplugins ashbaugh) exactly, in
 one readable place:
@@ -26,8 +27,8 @@ OpenMM evaluates the same pair functions directly as algebra.
 
 Outputs, in examples/calvados_gmx/pilot_openmm/:
 
-- hst5.pdb           input coordinates (inspectable)
-- trajectory.dcd     1100 frames, every 1 ps, after 10k equilibration steps
+- {PROTEIN_ID.lower()}.pdb  input coordinates (inspectable)
+- trajectory.dcd     frames every REPORT_INTERVAL steps after 10k equilibration
 - rg.txt             mass-weighted Rg per frame (nm)
 - energy_check.txt   the two-bead H-Y single-point verification against
                      the same pair math as the GROMACS tables
@@ -38,33 +39,38 @@ Run from the repository root:
 """
 
 from pathlib import Path
+import io
+import math
 
 import numpy as np
+import pandas as pd
 
 import openmm as mm
 import openmm.app as app
 import openmm.unit as unit
 
-from examples.calvados_gmx.build_pilot import (
-    BOND_K,
-    BOND_R0,
-    DT,
-    EPS_HI,
-    IONIC,
-    R_AH,
-    R_YK,
-    TEMP,
-    debye,
-    extended_residues,
-    pair_table,
-    residues_table,
-    type_sequence,
-)
+from examples.calvados_gmx.build_pilot import pair_table
+from examples.calvados.fetch_data import RAW, verified_bytes
+
+PROTEIN_ID = 'CTD2'
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "pilot_openmm"
 LAMBDA_COLUMN = "lambdas"     # 'lambdas' = optimized; 'lambdas_0' = M1 start
 SEED = 2026
+
+# Simulation parameters
+EPS_HI = 4.184 * 0.2          # kJ/mol, lj_eps
+R_AH = 2.4                    # nm, Ashbaugh-Hatch cutoff (mode='shift')
+R_YK = 4.0                    # nm, Yukawa cutoff (mode='shift')
+BOND_K = 8033.0               # kJ/mol/nm^2
+BOND_R0 = 0.38                # nm
+DT = 0.01                     # ps
+TABLE_STEP = 0.002            # nm, user-table grid spacing
+TABLE_MAX = 5.0               # nm, table range: must cover rvdw + 1
+# Conditions (temp, ionic, pH) are per-protein: read from the protein's
+# c2_rg.csv row via protein_conditions(); Hst5's row matches the upstream
+# analyse.py values (293 K, 0.15 M, pH 7.5).
 EQUIL_STEPS = 10_000          # upstream: 10000 steps at dt 0.005
 PROD_STEPS = 110_000          # 1.1 ns pilot at dt 0.01
 REPORT_INTERVAL = 100         # steps between trajectory frames
@@ -80,6 +86,7 @@ _SR6 = f"({_SIGMA}/r)^6"
 _LJ = f"(4*epsilon*({_SR6}*{_SR6} - {_SR6}))"
 _WCA = f"({_LJ} + epsilon*(1 - {_LAMBDA}))"
 _ATT = f"({_LAMBDA}*{_LJ})"
+# step is a heaviside function. If r<=rmin then _WCA else _ATT
 _AH = f"select(step(1.1224620483093721*{_SIGMA} - r), {_WCA}, {_ATT})"
 _AH_SHIFT = f"(4*epsilon*{_LAMBDA}*(({_SIGMA}/rc_ah)^12 - ({_SIGMA}/rc_ah)^6))"
 _YK = f"({_QQ}*exp(-kappa*r)/r)"
@@ -89,18 +96,100 @@ PAIR_ENERGY = (
     f" + step(rc_yk - r)*({_YK} - {_YK_SHIFT})"
 )
 
+def protein_record(protein_id=None):
+    """Full c2_rg.csv row (fasta, conditions, experimental Rg) for the
+    requested protein; the single source for sequence AND conditions.
 
-def particle_records():
+    Hst5's entry is identical to the sequence hardcoded upstream (verified
+    byte-for-byte), so switching PROTEIN_ID changes the system without
+    touching the physics. Raises a clear error naming the table and ID
+    when absent.
+    """
+    if protein_id is None:
+        protein_id = PROTEIN_ID  # module global, read at call time
+    table = pd.read_csv(HERE.parent / "calvados" / "c2_rg.csv")
+    hit = table[table.iloc[:, 0] == protein_id]
+    if hit.empty:
+        raise ValueError(
+            f"calvados_gmx pilot: protein {protein_id!r} not found in "
+            "examples/calvados/c2_rg.csv"
+        )
+    return hit.iloc[0]
+
+
+def protein_conditions(record):
+    """(temp, ionic, ph) from the protein's c2_rg.csv row."""
+    return float(record["temp"]), float(record["ionic"]), float(record["pH"])
+
+def residues_table(lambda_column="lambdas", ph=None):
+    """The 20 CALVADOS residues; ``lambda_column`` selects the
+    parameterization ('lambdas' = optimized, 'lambdas_0' = M1 start).
+
+    The pH-dependent HIS charge is evaluated at ``ph`` (the protein's
+    c2_rg.csv value); upstream HPS default when omitted.
+    """
+    table = pd.read_csv(io.BytesIO(verified_bytes(RAW / "residues.csv")))
+    table = table.set_index("one", drop=False)
+    table["q"] = table["q"].astype(float)
+    if lambda_column not in table.columns:
+        raise ValueError(f"CALVADOS residues: no column {lambda_column!r}")
+    table["lambdas"] = table[lambda_column].astype(float)
+    # pH-dependent HIS charge, exactly as upstream genParams
+    if ph is None:
+        ph = protein_conditions(protein_record())[2]
+    table.loc["H", "q"] = 1.0 / (1.0 + 10 ** (ph - 6))
+    return table
+
+def debye(temperature, ionic):
+    """(kappa in 1/nm, lB in nm, RT in kJ/mol) exactly as upstream."""
+    RT = 8.3145 * temperature * 1e-3
+    fepsw = lambda T: (5321 / T + 233.76 - 0.9297 * T + 0.1417e-2 * T * T - 0.8292e-6 * T ** 3)  # noqa: E731
+    epsw = fepsw(temperature)
+    lB = 1.6021766 ** 2 / (4 * math.pi * 8.854188 * epsw) * 6.022 * 1000 / RT
+    kappa = math.sqrt(8 * math.pi * lB * ionic * 6.022 / 10)
+    return kappa, lB, RT
+
+def type_sequence(protein_id=None):
+    """The pilot protein with upstream terminal handling: X = N-term
+    (+1 charge, +2 MW), Z = C-term (-1 charge, +16 MW)."""
+    sequence = list(protein_record(protein_id)["fasta"])
+    types = list(sequence)
+    first, last = types[0], types[-1]
+    # Replacing the first and last AA types with N-term and C-term type
+    types[0] = "X"
+    types[-1] = "Z"
+    terminal = {
+        "X": dict(base=first, dq=+1.0, dm=+2.0),
+        "Z": dict(base=last, dq=-1.0, dm=+16.0),
+    }
+    return sequence, types, terminal
+
+def extended_residues(residues, terminal):
+    """Residue table extended with the terminal pseudo-types X and Z."""
+    table = residues.copy()
+    for name, spec in terminal.items():
+        # Name : Terminal Bead ; spec : Type of Side chain
+        row = residues.loc[spec["base"]].copy()
+        row["one"] = name
+        row["q"] = row["q"] + spec["dq"]
+        row["MW"] = row["MW"] + spec["dm"]
+        # Adjust the 'q' and 'MW' attributes for the first and last bead in the residues table.
+        table.loc[name] = row
+    return table
+
+def particle_records(lambdas=LAMBDA_COLUMN, protein_id=PROTEIN_ID):
     """One record per bead: (type, sigma, lambda, charge, mass)."""
-    residues = residues_table(LAMBDA_COLUMN)
-    sequence, types, terminal = type_sequence(residues)
+    # All the 20 AA with MW, sigmas, charge, hydropathys from HPS,
+    residues = residues_table(lambdas)
+    sequence, types, terminal = type_sequence(protein_id)
     records_ext = extended_residues(residues, terminal)
     records = []
-    for one in types:
+    for i, one in enumerate(types):
         row = records_ext.loc[one]
         records.append(
             {
                 "type": one,
+                "base": sequence[i],
                 "sigma": float(row.sigmas),
                 "lambda": float(row.lambdas),
                 "q": float(row.q),
@@ -133,10 +222,15 @@ def add_pair_force(system, records, kappa, lB, RT):
     return force
 
 
-def hst5_system(records):
-    """24-bead system in the upstream box, bonds only, no PBC pressure."""
+def pilot_system(records):
+    """One bonded bead chain in a periodic box sized to the chain.
+
+    The box must be at least 2x the nonbonded cutoff (2 * R_YK = 8 nm)
+    for minimum-image correctness under CutoffPeriodic; the chain term
+    (n * BOND_R0 + 1) dominates for every protein of 19+ residues.
+    """
     n = len(records)
-    box = n * 0.38 + 1
+    box = max(n * BOND_R0 + 1.0, 2 * R_YK + 1.0)
     system = mm.System()
     for record in records:
         system.addParticle(record["mass"])
@@ -161,8 +255,9 @@ def input_positions(records):
 
 def single_point_check(energy_text):
     """Two H/Y beads at 0.6 nm: OpenMM energy vs the GROMACS-table math."""
-    residues = residues_table(LAMBDA_COLUMN)
-    kappa, lB, RT = debye(TEMP, IONIC)
+    temp, ionic, ph = protein_conditions(protein_record())
+    residues = residues_table(LAMBDA_COLUMN, ph=ph)
+    kappa, lB, RT = debye(temp, ionic)
     system = mm.System()
     for one in ("H", "Y"):
         system.addParticle(float(residues.loc[one, "MW"]))
@@ -195,7 +290,7 @@ def single_point_check(energy_text):
     for record in records:
         force.addParticle([record[k] for k in ("sigma", "lambda", "q")])
     system.addForce(force)
-    integrator = mm.LangevinMiddleIntegrator(TEMP * unit.kelvin, 1.0, DT)
+    integrator = mm.LangevinMiddleIntegrator(temp * unit.kelvin, 1.0, DT)
     context = mm.Context(system, integrator, mm.Platform.getPlatformByName("CPU"))
     context.setPositions([mm.Vec3(0, 0, 0), mm.Vec3(0.6, 0, 0)])
     openmm_energy = context.getState(getEnergy=True).getPotentialEnergy()
@@ -220,13 +315,15 @@ def build_topology(records, sequence):
     topology = app.Topology()
     chain = topology.addChain("A")
     for i, record in enumerate(records):
-        one = record["type"]
-        base = one if one not in ("X", "Z") else ("D" if one == "X" else "Y")
+        # Terminal pseudo-types X/Z label as their base residue; the
+        # charge/mass/sigma/lambda corrections live in the records, not
+        # in the display name.
+        base = record.get("base", record["type"])
         residue = topology.addResidue(
             f"{three_of[base]}{i + 1}", chain
         )
         element = app.element.carbon
-        topology.addAtom(one, element, residue)
+        topology.addAtom(record["type"], element, residue)
     return topology
 
 
@@ -234,12 +331,10 @@ def write_pdb(path, records, positions, box):
     """A minimal inspectable PDB of the input coordinates."""
     residues = residues_table(LAMBDA_COLUMN)
     three_of = residues["three"].to_dict()
-    lines = ["REMARK   CALVADOS2 pilot input: Hst5 beads on a line"]
+    lines = [f"REMARK   CALVADOS2 pilot input: {PROTEIN_ID} beads on a line"]
     for i, (record, position) in enumerate(zip(records, positions), start=1):
         one = record["type"]
-        base = one if one not in ("X", "Z") else (
-            "D" if one == "X" else "Y"
-        )
+        base = record.get("base", one)
         lines.append(
             f"ATOM  {i:5d} {one:>4s} {three_of[base]:>3s} A{i:4d}    "
             f"{position[0]:8.3f}{position[1]:8.3f}{position[2]:8.3f}"
@@ -268,20 +363,22 @@ def radius_of_gyration(pdb, dcd, masses):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    record = protein_record()
+    temp, ionic, ph = protein_conditions(record)
     records, sequence = particle_records()
-    kappa, lB, RT = debye(TEMP, IONIC)
+    kappa, lB, RT = debye(temp, ionic)
 
     check_text = single_point_check(None)
     (OUT / "energy_check.txt").write_text(check_text)
     print(check_text, end="")
 
-    system, box = hst5_system(records)
+    system, box = pilot_system(records)
     add_pair_force(system, records, kappa, lB, RT)
     positions = input_positions(records)
-    write_pdb(OUT / "hst5.pdb", records, positions, box)
+    write_pdb(OUT / f"{PROTEIN_ID.lower()}.pdb", records, positions, box)
 
     integrator = mm.LangevinMiddleIntegrator(
-        TEMP * unit.kelvin, 1.16, DT * 0.5
+        temp * unit.kelvin, 1.16, DT * 0.5
     )
     integrator.setRandomNumberSeed(SEED)
     topology = build_topology(records, sequence)
@@ -293,7 +390,7 @@ def main():
     )
     simulation.context.setPositions(positions)
     simulation.context.setVelocitiesToTemperature(
-        TEMP * unit.kelvin, SEED
+        temp * unit.kelvin, SEED
     )
 
     print(f"equilibration: {EQUIL_STEPS} steps at dt {DT * 0.5} ps", flush=True)
@@ -316,13 +413,18 @@ def main():
             flush=True,
         )
     masses = np.array([record["mass"] for record in records])
-    rg = radius_of_gyration(OUT / "hst5.pdb", OUT / "trajectory.dcd", masses)
+    rg = radius_of_gyration(
+        OUT / f"{PROTEIN_ID.lower()}.pdb", OUT / "trajectory.dcd", masses
+    )
     np.savetxt(OUT / "rg.txt", rg, fmt="%.4f")
     tail = rg[len(rg) // 2 :]
+    exp_rg, exp_err = float(record["exp_rg"]), float(record["exp_rg_err"])
     print(
-        f"Rg (mass-weighted): mean over second half {tail.mean():.3f} nm; "
-        f"experimental 1.38 +- 0.05 nm (Tesei et al., 24-residue pilot - "
-        "1.1 ns is far short of the upstream 18 us)"
+        f"{PROTEIN_ID} Rg (mass-weighted): mean over second half "
+        f"{tail.mean():.3f} nm; "
+        f"experimental {exp_rg:.2f} +- {exp_err:.2f} nm "
+        f"({len(records)}-residue pilot - "
+        f"{PROD_STEPS * DT // 1000:g} ns is far short of the upstream 18 us)"
     )
     print(f"outputs in {OUT}")
 

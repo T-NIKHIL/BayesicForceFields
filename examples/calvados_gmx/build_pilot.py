@@ -1,4 +1,5 @@
-"""Build a GROMACS pilot system: CALVADOS2 Hst5 at the optimized lambdas.
+"""Build a GROMACS pilot system: the pilot protein (PROTEIN constant) at
+the optimized lambdas.
 
 Reproduces the upstream M1_24 simulation (simulate.py, pinned commit) with
 GROMACS instead of HOOMD: one bead per residue, Ashbaugh-Hatch attraction
@@ -12,7 +13,7 @@ check are printed to pilot/PARAMETERS.md.
 
 Writes:
 
-- pilot/        the pilot system: hst5.top, hst5.gro, index.ndx, run.mdp,
+- pilot/        the pilot system: {protein}.top, {protein}.gro, index.ndx, run.mdp,
                 tables/table_<T1>-<T2>.xvg for every residue-type pair,
                 and PARAMETERS.md
 - validate/     a two-bead single-point system (H and Y at 0.6 nm) whose
@@ -63,6 +64,10 @@ NREXCL = 2
 # ADAPT: the GROMACS convention under test in validate/. If the single
 # point energy differs from expected_energy.txt by a factor, change this.
 TABLE_COLUMN_SCALE = 1.0
+
+# Name of the IDP this pilot is set up for; shown in the human-readable
+# outputs. Change per protein (e.g. "CTD2"); does not alter the physics.
+PROTEIN = "Hst5"
 
 
 def residues_table(lambda_column="lambdas"):
@@ -147,10 +152,29 @@ def pair_table(residues, name_i, name_j, kappa, lB, RT):
     return text, value, deriv, r
 
 
-def type_sequence(residues):
-    """Hst5 with upstream terminal handling: X = N-term (+1 charge, +2 MW),
-    Z = C-term (-1 charge, +16 MW)."""
-    sequence = list("DSHAKRHHGYKRKFHEKHHSHRGY")
+def protein_fasta(protein_id=None):
+    """FASTA of the requested protein from the collaborator c2_rg table.
+
+    Hst5's entry is identical to the sequence hardcoded upstream (verified
+    byte-for-byte), so switching PROTEIN changes the system without touching
+    the physics. Raises a clear error naming the table and ID when absent.
+    """
+    if protein_id is None:
+        protein_id = PROTEIN  # module global, read at call time
+    table = pd.read_csv(HERE.parent / "calvados" / "c2_rg.csv")
+    hit = table[table.iloc[:, 0] == protein_id]
+    if hit.empty:
+        raise ValueError(
+            f"calvados_gmx pilot: protein {protein_id!r} not found in "
+            "examples/calvados/c2_rg.csv"
+        )
+    return str(hit.iloc[0]["fasta"])
+
+
+def type_sequence(protein_id=None):
+    """The pilot protein with upstream terminal handling: X = N-term
+    (+1 charge, +2 MW), Z = C-term (-1 charge, +16 MW)."""
+    sequence = list(protein_fasta(protein_id))
     types = list(sequence)
     first, last = types[0], types[-1]
     types[0] = "X"
@@ -194,7 +218,7 @@ def top_text(types, residues_ext, sequence):
     charges (electrostatics is inside the tables, else it would be double
     counted), upstream masses, CALVADOS harmonic bonds, nrexcl 2."""
     lines = [
-        "; CALVADOS2 Hst5 pilot topology (M1_24 numbers)",
+        f"; CALVADOS2 {PROTEIN} pilot topology (M1_24 numbers)",
         "; LJ numbers below are UNUSED: vdwtype=user tables carry the",
         "; Ashbaugh-Hatch + Yukawa physics. Charges are ZERO because",
         "; electrostatics is inside the tables. See PARAMETERS.md.",
@@ -212,7 +236,7 @@ def top_text(types, residues_ext, sequence):
             f"{one:<6s}  0  {row.MW:10.4f}  0.0000  A  "
             f"{row.sigmas:9.5f}  {EPS_HI:9.5f}"
         )
-    lines += ["", "[ moleculetype ]", "; name  nrexcl", f"Hst5  {NREXCL}", ""]
+    lines += ["", "[ moleculetype ]", "; name  nrexcl", f"{PROTEIN}  {NREXCL}", ""]
     lines += [
         "[ atoms ]",
         "; nr  type  resnr  residue  atom  cgnr  charge  mass",
@@ -230,10 +254,10 @@ def top_text(types, residues_ext, sequence):
     lines += [
         "",
         "[ system ]",
-        "CALVADOS2 Hst5 pilot",
+        f"CALVADOS2 {PROTEIN} pilot",
         "",
         "[ molecules ]",
-        "Hst5  1",
+        f"{PROTEIN}  1",
     ]
     return "\n".join(lines) + "\n"
 
@@ -301,7 +325,8 @@ def parameters_md(residues_ext, types, kappa, lB, RT):
         "(pinned commit, checksum-verified by fetch_data.py).",
         "Review every ADAPT-marked number.",
         "",
-        f"- temperature: {TEMP} K (Hst5 in analyse.py)",
+        f"- temperature: {TEMP} K (ADAPT: Hst5's condition from upstream"
+        " analyse.py; set per protein, e.g. 298 K for CTD2/A1)",
         f"- pH: {PH} (HIS charge = 1/(1+10^(pH-6)) = "
         f"{residues_ext.loc['H', 'q']:.4f} e)",
         f"- ionic strength: {IONIC} M",
@@ -331,7 +356,7 @@ def parameters_md(residues_ext, types, kappa, lB, RT):
 
 def build_pilot():
     residues = residues_table()
-    sequence, types, terminal = type_sequence(residues)
+    sequence, types, terminal = type_sequence(PROTEIN)
     residues_ext = extended_residues(residues, terminal)
     kappa, lB, RT = debye(TEMP, IONIC)
     groups = sorted(set(types))
@@ -342,8 +367,8 @@ def build_pilot():
             (PILOT / "tables" / f"table_{gi}-{gj}.xvg").write_text(text)
     n = len(types)
     box = n * BOND_R0 + 1
-    (PILOT / "hst5.gro").write_text(gro_lines(types, residues_ext, sequence, box))
-    (PILOT / "hst5.top").write_text(top_text(types, residues_ext, sequence))
+    (PILOT / f"{PROTEIN.lower()}.gro").write_text(gro_lines(types, residues_ext, sequence, box))
+    (PILOT / f"{PROTEIN.lower()}.top").write_text(top_text(types, residues_ext, sequence))
     (PILOT / "index.ndx").write_text(ndx_text(types))
     # 10k equilibration steps (upstream: 10000 at dt 0.005) + 1 ns pilot
     (PILOT / "run.mdp").write_text(mdp_text(groups, nsteps=10000 + 100000))
@@ -402,11 +427,12 @@ def build_validate():
     ]
     (VALIDATE / "two.top").write_text("\n".join(lines) + "\n")
     (VALIDATE / "two.gro").write_text(
-        f"3\n"
-        f"    1HIS      H    0.000   0.000   0.000\n"
-        f"    2TYR      Y    0.600   0.000   0.000\n"
-        f"    3DUM      D    9.000   9.000   9.000\n"
-        f"  10.00000  10.00000  10.00000\n"
+        "Two-bead table convention check\n"
+        "    3\n"
+        "    1HIS      H    1   0.000   0.000   0.000\n"
+        "    2TYR      Y    2   0.600   0.000   0.000\n"
+        "    3DUM      D    3   9.000   9.000   9.000\n"
+        "  10.00000  10.00000  10.00000\n"
     )
     (VALIDATE / "index.ndx").write_text("[ H ]\n1\n\n[ Y ]\n2\n\n[ DUM ]\n3\n")
     (VALIDATE / "run.mdp").write_text(

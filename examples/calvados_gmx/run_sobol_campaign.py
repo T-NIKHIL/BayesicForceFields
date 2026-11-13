@@ -96,7 +96,7 @@ def run_sample(index, lam_by_three):
         record["lambda"] = lam_by_three[three_of[base]]
 
     kappa, lB, RT = debye(rp.TEMP, rp.IONIC)
-    system, box = rp.hst5_system(records)
+    system, box = rp.pilot_system(records)
     rp.add_pair_force(system, records, kappa, lB, RT)
     positions = rp.input_positions(records)
     topology = rp.build_topology(records, sequence)

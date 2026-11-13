@@ -12,7 +12,7 @@ import pandas as pd
 import numpy as np
 import json
 
-from fetch_data import RAW
+from examples.calvados.fetch_data import RAW
 
 
 def main():
