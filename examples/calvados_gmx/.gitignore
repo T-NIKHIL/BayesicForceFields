@@ -16,3 +16,13 @@ longrun/**/final_state.xml
 pilot_openmm*/trajectory.dcd
 *.dcd
 *.gsd
+
+# CTD2 campaign outputs (512 vec_ dirs + fits; data lives on Aurum,
+# regenerable from the run scripts) - commit scripts and job templates only.
+campaign2/
+campaign_ctd2/
+campaign_ctd2_friction_0_01/
+campaign_ctd2_friction/*
+!campaign_ctd2_friction/job.sh
+pilot_a1/
+pilot_a1_50ns/
