@@ -4,7 +4,7 @@ Aromatic residues (Y, W, F) are green, sulfur-containing residues (C, M)
 orange-yellow, aliphatic residues (I, L) red, all others steel blue.
 
 Run with the bff env:
-    /Users/nikhilthota/miniconda3/envs/bff/bin/python plot_train_set_IDP_composition.py
+    /Users/nikhilthota/miniconda3/envs/bff/bin/python examples.calvados.plot_train_set_IDP_composition.py
 """
 
 from pathlib import Path
