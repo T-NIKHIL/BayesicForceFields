@@ -16,8 +16,10 @@ one readable place:
   energy-shifted to zero at 4.0 nm
 - harmonic bonds k = 8033 kJ/mol/nm^2, r0 = 0.38 nm; only bonded pairs
   are excluded from nonbonded; no angles or dihedrals
-- Langevin dynamics, dt = 0.01 ps; upstream gamma = MW/100 ps^-1 varies
-  per residue (0.57-1.63 here); we use the global 1.16 ps^-1 (ADAPT)
+- Langevin dynamics, dt = 0.01 ps; friction 0.01 ps^-1 (FRICTION_COEFF).
+  Upstream HOOMD sets gamma = MW/100 in mass/time units, i.e. velocity
+  relaxation time tau = m/gamma = 100 ps for every residue; OpenMM's
+  friction is 1/tau = 0.01 ps^-1, mass-independent (ORC 2023)
 
 Residue numbers come from the checksummed upstream residues.csv via
 build_pilot.py, which also keeps the GROMACS-format artifacts
@@ -58,6 +60,7 @@ HERE = Path(__file__).resolve().parent
 OUT = HERE / "pilot_openmm"
 LAMBDA_COLUMN = "lambdas"     # 'lambdas' = optimized; 'lambdas_0' = M1 start
 SEED = 2026
+RUN_SINGLE_POINT_CHECK = False
 
 # Simulation parameters
 EPS_HI = 4.184 * 0.2          # kJ/mol, lj_eps
@@ -65,15 +68,22 @@ R_AH = 2.4                    # nm, Ashbaugh-Hatch cutoff (mode='shift')
 R_YK = 4.0                    # nm, Yukawa cutoff (mode='shift')
 BOND_K = 8033.0               # kJ/mol/nm^2
 BOND_R0 = 0.38                # nm
-DT = 0.01                     # ps
+FRICTION_COEFF = 0.01         # ps^-1
+DT = 0.01                     # ps (Using Langevin Middle Integrator so 5 fs; 2024 paper has 10 fs)
 TABLE_STEP = 0.002            # nm, user-table grid spacing
 TABLE_MAX = 5.0               # nm, table range: must cover rvdw + 1
 # Conditions (temp, ionic, pH) are per-protein: read from the protein's
 # c2_rg.csv row via protein_conditions(); Hst5's row matches the upstream
 # analyse.py values (293 K, 0.15 M, pH 7.5).
-EQUIL_STEPS = 10_000          # upstream: 10000 steps at dt 0.005
-PROD_STEPS = 110_000          # 1.1 ns pilot at dt 0.01
-REPORT_INTERVAL = 100         # steps between trajectory frames
+# Protocol as in run_pilot_a1: 50 ns equilibration at dt 0.005 (discarded),
+# then 500 ns production at dt 0.01, frames every 10 ps.
+# Equilibration 50 ns = 50_000 ps / 0.005 ps = 10_000_000 steps.
+# Production 500 ns = 500_000 ps / 0.01 ps = 50_000_000 steps.
+EQUIL_STEPS = 10_000_000      # 50 ns at dt 0.005
+PROD_STEPS = 50_000_000       # 500 ns at dt 0.01
+REPORT_INTERVAL = 1_000       # steps between trajectory frames = 10 ps at dt 0.01
+CHECKPOINT_INTERVAL = 500_000 # steps between context checkpoints (~40 s on OpenCL)
+PROGRESS_INTERVAL = 50_000    # steps between progress prints (~5 s on OpenCL; user-tunable)
 
 # The whole pair physics, evaluated by OpenMM per pair. OpenMM takes one
 # flat expression, so the algebra is assembled from named pieces: sigma_ij
@@ -97,13 +107,15 @@ PAIR_ENERGY = (
 )
 
 def protein_record(protein_id=None):
-    """Full c2_rg.csv row (fasta, conditions, experimental Rg) for the
-    requested protein; the single source for sequence AND conditions.
+    """(fasta, exp_rg, exp_err, calvados2_rg, temp, ionic, ph) matching
+    upstream_record() in run_pilot_a1.py, but for any protein.
 
-    Hst5's entry is identical to the sequence hardcoded upstream (verified
-    byte-for-byte), so switching PROTEIN_ID changes the system without
-    touching the physics. Raises a clear error naming the table and ID
-    when absent.
+    c2_rg.csv supplies the sequence, experimental target/error and
+    conditions.
+
+    calvados2_rg is CALVADOS2's reported mean Rg from the
+    cycle-11 snapshot (the near-optimized parameters), the same reference
+    run_pilot_a1 compares against;
     """
     if protein_id is None:
         protein_id = PROTEIN_ID  # module global, read at call time
@@ -114,15 +126,26 @@ def protein_record(protein_id=None):
             f"calvados_gmx pilot: protein {protein_id!r} not found in "
             "examples/calvados/c2_rg.csv"
         )
-    return hit.iloc[0]
-
+    row = hit.iloc[0]
+    cycle11 = pd.read_pickle(
+        io.BytesIO(verified_bytes(RAW / "11_init_proteinsRgs.pkl"))
+    )
+    return (
+        str(row["fasta"]),
+        float(row["exp_rg"]),
+        float(row["exp_rg_err"]),
+        float(cycle11.loc[protein_id, "Rg"]),
+        float(row["temp"]),
+        float(row["ionic"]),
+        float(row["pH"]),
+    )
 
 def protein_conditions(record):
     """(temp, ionic, ph) from the protein's c2_rg.csv row."""
-    return float(record["temp"]), float(record["ionic"]), float(record["pH"])
+    return record[-3], record[-2], record[-1]
 
 def residues_table(lambda_column="lambdas", ph=None):
-    """The 20 CALVADOS residues; ``lambda_column`` selects the
+    """The 20 AA residues; ``lambda_column`` selects the
     parameterization ('lambdas' = optimized, 'lambdas_0' = M1 start).
 
     The pH-dependent HIS charge is evaluated at ``ph`` (the protein's
@@ -132,7 +155,7 @@ def residues_table(lambda_column="lambdas", ph=None):
     table = table.set_index("one", drop=False)
     table["q"] = table["q"].astype(float)
     if lambda_column not in table.columns:
-        raise ValueError(f"CALVADOS residues: no column {lambda_column!r}")
+        raise ValueError(f"AA residues: no column {lambda_column!r}")
     table["lambdas"] = table[lambda_column].astype(float)
     # pH-dependent HIS charge, exactly as upstream genParams
     if ph is None:
@@ -141,18 +164,26 @@ def residues_table(lambda_column="lambdas", ph=None):
     return table
 
 def debye(temperature, ionic):
-    """(kappa in 1/nm, lB in nm, RT in kJ/mol) exactly as upstream."""
+    """(kappa in 1/nm, lB in nm, RT in kJ/mol) exactly as upstream.
+    Same setup as in KULL-Centre/CALVADOS/calvados/interactions.py
+    """
+    # Thermal Energy
     RT = 8.3145 * temperature * 1e-3
-    fepsw = lambda T: (5321 / T + 233.76 - 0.9297 * T + 0.1417e-2 * T * T - 0.8292e-6 * T ** 3)  # noqa: E731
-    epsw = fepsw(temperature)
-    lB = 1.6021766 ** 2 / (4 * math.pi * 8.854188 * epsw) * 6.022 * 1000 / RT
+    fepsw = lambda T: (5321 / T + 233.76 - 0.9297 * T +\
+                        0.1417e-2 * T * T - 0.8292e-6 * T ** 3)  # noqa: E731
+    # Just the constant
+    vacuum_permittivity = 8.854188 # 10^-12 F/m
+    relative_permittivity = fepsw(temperature)
+    # Bjerrum length
+    lB = 1.6021766 ** 2 / (4 * math.pi * vacuum_permittivity * relative_permittivity) * 6.022 * 1000 / RT
+    # inverse of debye length
     kappa = math.sqrt(8 * math.pi * lB * ionic * 6.022 / 10)
     return kappa, lB, RT
 
 def type_sequence(protein_id=None):
     """The pilot protein with upstream terminal handling: X = N-term
     (+1 charge, +2 MW), Z = C-term (-1 charge, +16 MW)."""
-    sequence = list(protein_record(protein_id)["fasta"])
+    sequence = list(protein_record(protein_id)[0])
     types = list(sequence)
     first, last = types[0], types[-1]
     # Replacing the first and last AA types with N-term and C-term type
@@ -222,7 +253,7 @@ def add_pair_force(system, records, kappa, lB, RT):
     return force
 
 
-def pilot_system(records):
+def simulation_box(records):
     """One bonded bead chain in a periodic box sized to the chain.
 
     The box must be at least 2x the nonbonded cutoff (2 * R_YK = 8 nm)
@@ -242,6 +273,11 @@ def pilot_system(records):
         mm.Vec3(box, 0, 0), mm.Vec3(0, box, 0), mm.Vec3(0, 0, box)
     )
     return system, box
+
+
+def hst5_system(records):
+    """Backward-compat alias: the Hst5-era name of simulation_box()."""
+    return simulation_box(records)
 
 
 def input_positions(records):
@@ -290,7 +326,7 @@ def single_point_check(energy_text):
     for record in records:
         force.addParticle([record[k] for k in ("sigma", "lambda", "q")])
     system.addForce(force)
-    integrator = mm.LangevinMiddleIntegrator(temp * unit.kelvin, 1.0, DT)
+    integrator = mm.LangevinMiddleIntegrator(temp * unit.kelvin, FRICTION_COEFF, DT)
     context = mm.Context(system, integrator, mm.Platform.getPlatformByName("CPU"))
     context.setPositions([mm.Vec3(0, 0, 0), mm.Vec3(0.6, 0, 0)])
     openmm_energy = context.getState(getEnergy=True).getPotentialEnergy()
@@ -345,8 +381,15 @@ def write_pdb(path, records, positions, box):
     path.write_text("\n".join(lines) + "\n")
 
 
-def radius_of_gyration(pdb, dcd, masses):
-    """Mass-weighted Rg per frame, as upstream analyse.py calcRg."""
+def radius_of_gyration(pdb, dcd, masses, box):
+    """Mass-weighted Rg per frame, wrap-safe (as run_pilot_a1).
+
+    DCD coordinates are wrapped into the periodic box; a chain whose
+    center of mass crosses a box face would otherwise give a wildly
+    wrong Rg. Consecutive beads are bonded at BOND_R0 - far below the
+    box - so unwrapping by the minimum image of each backbone step is
+    unambiguous.
+    """
     import MDAnalysis as mda
 
     universe = mda.Universe(str(pdb), str(dcd))
@@ -354,6 +397,9 @@ def radius_of_gyration(pdb, dcd, masses):
     for _ in universe.trajectory:
         # MDAnalysis positions are in Angstrom; convert to nm.
         positions = universe.atoms.positions / 10.0
+        steps = np.diff(positions, axis=0)
+        steps -= box * np.round(steps / box)
+        positions[1:] = positions[0] + np.cumsum(steps, axis=0)
         com = np.average(positions, axis=0, weights=masses)
         values.append(
             float(np.sqrt(np.average(((positions - com) ** 2).sum(1), weights=masses)))
@@ -364,70 +410,131 @@ def radius_of_gyration(pdb, dcd, masses):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     record = protein_record()
-    temp, ionic, ph = protein_conditions(record)
+    temp, ionic, _ = protein_conditions(record)
     records, sequence = particle_records()
+
+    if RUN_SINGLE_POINT_CHECK:
+        check_text = single_point_check(None)
+        (OUT / "energy_check.txt").write_text(check_text)
+        print(check_text, end="")
+
     kappa, lB, RT = debye(temp, ionic)
-
-    check_text = single_point_check(None)
-    (OUT / "energy_check.txt").write_text(check_text)
-    print(check_text, end="")
-
-    system, box = pilot_system(records)
+    system, box = simulation_box(records)
     add_pair_force(system, records, kappa, lB, RT)
     positions = input_positions(records)
     write_pdb(OUT / f"{PROTEIN_ID.lower()}.pdb", records, positions, box)
 
+    # Run at half the step size for equilibration
+    # The friction coefficient (gamma) is independent of mass. tau = MW/gamma (or) gamma = MW/tau
+    # Tau is the velocity relaxation time which is set to 100 ps for each bead.
+    # gamma_HOOMD  = MW/tau (See simulate.py)
+    # gamma_openMM = gamma_HOOMD/MW = 1/tau
     integrator = mm.LangevinMiddleIntegrator(
-        temp * unit.kelvin, 1.16, DT * 0.5
+        temp * unit.kelvin, FRICTION_COEFF, DT * 0.5
     )
     integrator.setRandomNumberSeed(SEED)
+    platforms = [
+        mm.Platform.getPlatform(i).getName()
+        for i in range(mm.Platform.getNumPlatforms())
+    ]
+    # Preference order: CUDA (Aurum L40S/3090), OpenCL (this Mac), CPU.
+    platform_name = next(
+        (name for name in ("CUDA", "OpenCL", "CPU") if name in platforms),
+        "CPU",
+    )
     topology = build_topology(records, sequence)
     simulation = app.Simulation(
         topology,
         system,
         integrator,
-        mm.Platform.getPlatformByName("CPU"),
-    )
-    simulation.context.setPositions(positions)
-    simulation.context.setVelocitiesToTemperature(
-        temp * unit.kelvin, SEED
+        mm.Platform.getPlatformByName(platform_name),
     )
 
-    print(f"equilibration: {EQUIL_STEPS} steps at dt {DT * 0.5} ps", flush=True)
-    simulation.step(EQUIL_STEPS)
+    # Checkpoint/resume: the context (positions, velocities, RNG state and
+    # currentStep) is restored from checkpoint.chk when present, so an
+    # interrupted run continues instead of restarting from scratch. The
+    # checkpoint records absolute context steps; every PROD_STEPS change
+    # (e.g. between smoke tests) therefore needs a fresh checkpoint or a
+    # matching EQUIL_STEPS to stay consistent.
+    checkpoint = OUT / "checkpoint.chk"
+    resumed = checkpoint.is_file()
+    if resumed:
+        simulation.loadCheckpoint(str(checkpoint))
+        print(
+            f"resumed from checkpoint at step {simulation.currentStep} "
+            f"({platform_name})",
+            flush=True,
+        )
+    else:
+        simulation.context.setPositions(positions)
+        simulation.context.setVelocitiesToTemperature(
+            temp * unit.kelvin, SEED
+        )
+        print(
+            f"equilibration: {EQUIL_STEPS} steps at dt {DT * 0.5} ps on "
+            f"{platform_name}",
+            flush=True,
+        )
+        simulation.step(EQUIL_STEPS)
+    remaining = max(EQUIL_STEPS + PROD_STEPS - simulation.currentStep, 0)
+
     integrator.setStepSize(DT)
     simulation.reporters.append(
-        app.DCDReporter(str(OUT / "trajectory.dcd"), REPORT_INTERVAL)
+        app.DCDReporter(
+            str(OUT / "trajectory.dcd"), REPORT_INTERVAL, append=resumed
+        )
     )
-    print(f"production: {PROD_STEPS} steps at dt {DT} ps", flush=True)
-    for block in range(0, PROD_STEPS, 5_000):
-        chunk = min(5_000, PROD_STEPS - block)
+    simulation.reporters.append(
+        app.CheckpointReporter(str(checkpoint), CHECKPOINT_INTERVAL)
+    )
+    print(f"production: {remaining}/{PROD_STEPS} steps left at dt {DT} ps", flush=True)
+    step = max(simulation.currentStep - EQUIL_STEPS, 0)  # production-relative
+    # The checkpoint on disk is at most CHECKPOINT_INTERVAL behind the true
+    # end (the reporter fires on its own tick, not at completion), so a
+    # resumed tail loop would replay steps whose DCD frames were already
+    # recorded. A final_state.xml from the previous run marks real
+    # completion; in that case skip the loop entirely.
+    if resumed and (OUT / "final_state.xml").is_file():
+        print("final_state.xml present: trajectory already complete", flush=True)
+        remaining = 0
+    for block in range(0, remaining, PROGRESS_INTERVAL):
+        chunk = min(PROGRESS_INTERVAL, remaining - block)
         simulation.step(chunk)
+        step += chunk
         energy = simulation.context.getState(
             getEnergy=True
         ).getPotentialEnergy()
         print(
-            f"  step {block + chunk}/{PROD_STEPS}, "
+            f"  {step}/{PROD_STEPS} steps, "
             f"potential {energy.value_in_unit(unit.kilojoule_per_mole):8.2f}"
             " kJ/mol",
             flush=True,
         )
+    simulation.saveState(str(OUT / "final_state.xml"))
     masses = np.array([record["mass"] for record in records])
     rg = radius_of_gyration(
-        OUT / f"{PROTEIN_ID.lower()}.pdb", OUT / "trajectory.dcd", masses
+        OUT / f"{PROTEIN_ID.lower()}.pdb", OUT / "trajectory.dcd", masses, box
     )
     np.savetxt(OUT / "rg.txt", rg, fmt="%.4f")
-    tail = rg[len(rg) // 2 :]
-    exp_rg, exp_err = float(record["exp_rg"]), float(record["exp_rg_err"])
-    print(
-        f"{PROTEIN_ID} Rg (mass-weighted): mean over second half "
-        f"{tail.mean():.3f} nm; "
-        f"experimental {exp_rg:.2f} +- {exp_err:.2f} nm "
-        f"({len(records)}-residue pilot - "
-        f"{PROD_STEPS * DT // 1000:g} ns is far short of the upstream 18 us)"
-    )
-    print(f"outputs in {OUT}")
 
+    frames_per_block = int(1000 / (REPORT_INTERVAL * DT))  # 100 frames = 1 ns
+    n_blocks = len(rg) // frames_per_block
+    means = rg[: n_blocks * frames_per_block].reshape(n_blocks, frames_per_block).mean(axis=1)
+    mean, sem = means.mean(), means.std(ddof=1) / np.sqrt(n_blocks)
+    exp_rg, exp_err = record[1], record[2]  # tuple: (fasta, exp_rg, exp_err, ...)
+    report = [
+        f"{PROTEIN_ID} Rg (mass-weighted, nm), CALVADOS2 optimized lambdas",
+        "=" * 60,
+        f"ours: {mean:.4f} +- {sem:.4f} nm ({n_blocks} x 1-ns block averages;",
+        f"  single {PROD_STEPS * DT // 1000:g} ns trajectory, "
+        f"{EQUIL_STEPS * DT * 0.5 // 1000:g} ns equilibration discarded)",
+        f"experiment: {exp_rg:.2f} +- {exp_err:.2f} nm",
+        f"  difference: {mean - exp_rg:+.4f} nm "
+        f"({abs(mean - exp_rg) / max(sem, exp_err):.1f} sigma)",
+    ]
+    (OUT / "Rg_comparison.txt").write_text("\n".join(report) + "\n")
+    print("\n".join(report))
+    print(f"outputs in {OUT}")
 
 if __name__ == "__main__":
     main()

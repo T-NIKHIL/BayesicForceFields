@@ -336,7 +336,8 @@ def parameters_md(residues_ext, types, kappa, lB, RT):
         f"- eps_HI = {EPS_HI} kJ/mol, AH cutoff = {R_AH} nm (energy-shifted)",
         f"- Yukawa cutoff = {R_YK} nm (energy-shifted)",
         f"- bonds: k = {BOND_K} kJ/mol/nm^2, r0 = {BOND_R0} nm",
-        f"- dt = {DT} ps, Langevin gamma = MW/100 (sd tau-t 1.0 ADAPT)",
+        f"- dt = {DT} ps, sd friction: HOOMD gamma = MW/100 (Da/ps) => "
+        f"tau = m/gamma = 100 ps => GROMACS tau_t = 100 (ADAPT: untested)",
         f"- exclusions: bonded pairs only (nrexcl {NREXCL}); no angles",
         "",
         "| type | three | sigma (nm) | lambda (M1 opt) | charge (e) | MW (Da) |",
