@@ -1,0 +1,32 @@
+bounds:
+  charge C:
+  - -1.0
+  - 1.2
+  charge CA:
+  - -1.5
+  - 0.2
+  charge HA:
+  - -0.5
+  - 0.8
+  charge HN:
+  - 0.1
+  - 0.6
+  charge N:
+  - -1.0
+  - 0.3
+  charge O:
+  - -1.0
+  - 0.3
+charge_constraints:
+- coefficients:
+    charge C: 3.0
+    charge CA: 3.0
+    charge HA: 3.0
+    charge HN: 3.0
+    charge N: 3.0
+    charge O: 3.0
+  fixed_charge: 2.0829999999999997
+  implicit: charge C
+  scope: system
+  selection: resname PROA
+  target: 0.0

@@ -1,0 +1,17 @@
+specs: /Users/nikhilthota/Desktop/lab/pavel_iocb/projects/code_for_lab_collaborations/zabka/03-sample/specs.yaml
+models:
+  hb:
+    model_path: /Users/nikhilthota/Desktop/lab/pavel_iocb/projects/code_for_lab_collaborations/zabka/06-learn/gp-analysis/hb-cpu.lgp
+    independent_observations: true
+  rdf:
+    model_path: /Users/nikhilthota/Desktop/lab/pavel_iocb/projects/code_for_lab_collaborations/zabka/06-learn/gp-analysis/rdf-cpu.lgp
+    tolerance: 0.01
+mcmc:
+  device: cpu
+  priors_disttype: normal
+  total_steps: 1500
+  warmup: 500
+  include_implicit_charge: true
+output:
+  directory: /Users/nikhilthota/Desktop/lab/pavel_iocb/projects/code_for_lab_collaborations/zabka/06-learn/gp-analysis
+  overwrite: false
