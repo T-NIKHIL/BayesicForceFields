@@ -1,0 +1,37 @@
+{
+  "selected_regions": 35,
+  "selected_proteins": 32,
+  "total_residues": 9395,
+  "length_aa": {
+    "min": 36,
+    "median": 193.0,
+    "mean": 268.42857142857144,
+    "max": 702
+  },
+  "length_bins": {
+    "<100": {
+      "regions": 6,
+      "proteins": 6,
+      "residues": 406
+    },
+    "100-200": {
+      "regions": 13,
+      "proteins": 13,
+      "residues": 2139
+    },
+    ">200": {
+      "regions": 16,
+      "proteins": 16,
+      "residues": 6850
+    }
+  },
+  "source": {
+    "url": "https://phasepro.elte.hu/download_full.json",
+    "fetched_at_utc": "2026-11-26T13:08:13.114310+00:00",
+    "response_sha256": "ad2a5aed1ef6a2dac6a1da4259d0f3747ee8a35a77140b1582f4d27909662092"
+  },
+  "source_entries": 121,
+  "excluded_items": 109,
+  "selection": "Explicit disorder/unstructured/IDR/IDP description; exclude mixed folded-domain annotations and unpaired descriptions. Not a disorder prediction or a complete catalog of LLPS IDRs. Separate intervals are separate observations, not necessarily autonomous LLPS constructs.",
+  "counting": "1-based inclusive coordinates; no minimum length; retain distinct accessions even if sequences match; pool residues within each bin. 100 and 200 aa are included in the middle bin."
+}

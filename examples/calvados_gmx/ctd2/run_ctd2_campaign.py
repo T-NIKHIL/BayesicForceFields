@@ -34,12 +34,12 @@ use.
 
 Run from the repository root:
 
-    python -m examples.calvados_gmx.run_ctd2_campaign          # all
-    python -m examples.calvados_gmx.run_ctd2_campaign 42       # one sample
+    python -m examples.calvados_gmx.ctd2.run_ctd2_campaign          # all
+    python -m examples.calvados_gmx.ctd2.run_ctd2_campaign 42       # one sample
 
 On Aurum, one array task per sample:
 
-    sbatch --array=1-512%50 campaign_ctd2/job.sh
+    sbatch --array=1-512%50 ctd2/campaign_ctd2/job.sh
 """
 
 import io
@@ -62,7 +62,7 @@ from examples.calvados_gmx import run_pilot_openmm as rp
 
 PROTEIN_ID = 'CTD2'
 
-HERE = rp.HERE
+HERE = Path(__file__).resolve().parent
 OUT = HERE / "campaign_ctd2"
 
 # Sobol parameters

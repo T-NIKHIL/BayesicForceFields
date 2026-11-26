@@ -1,0 +1,77 @@
+{
+  "source": {
+    "url": "http://bio-comp.org.cn/llpsdbv2/download/Phase_separation_unambiguous.zip",
+    "resolved_url": "http://bio-comp.org.cn/llpsdbv2/download/Phase_separation_unambiguous.zip",
+    "fetched_at_utc": "2026-11-26T13:41:57.379864+00:00",
+    "response_sha256": "b6d3baafad8524eadd52e32c2bda2813c7b3a08e76678c9dd2b74a6eaa762d1c"
+  },
+  "source_experiment_rows": 4111,
+  "source_unique_entries": 2038,
+  "source_proteins": 504,
+  "selected_regions": 204,
+  "selected_protein_ids": 106,
+  "selected_accessions": 106,
+  "length_aa": {
+    "min": 4,
+    "median": 48.0,
+    "mean": 79.6470588235294,
+    "max": 699
+  },
+  "length_bins": {
+    "<100": {
+      "regions": 155,
+      "residues": 6663
+    },
+    "100-200": {
+      "regions": 36,
+      "residues": 5030
+    },
+    ">200": {
+      "regions": 13,
+      "residues": 4555
+    }
+  },
+  "audit_reasons": {
+    "eligible IDR coverage": 198,
+    "not a single-protein system without nucleic acids": 1210,
+    "fusion, mutation, engineered repeat or PTM": 282,
+    "IDR coordinates outside parent sequence: 342-357": 6,
+    "construct does not map uniquely and exactly to parent": 38,
+    "not a natural protein": 130,
+    "no annotated parent IDR": 136,
+    "IDR coordinates outside parent sequence: 395-460": 17,
+    "IDR coordinates outside parent sequence: 373-592": 2,
+    "tested construct does not overlap an annotated IDR": 18,
+    "missing sequence or nonstandard amino acids": 1
+  },
+  "calvados2_reference": {
+    "path": "/Users/nikhilthota/Desktop/lab/pavel_iocb/projects/BayesicForceFields/examples/calvados/M1_24_analysis_scripts/train_set_idp_composition.csv",
+    "proteins": 51,
+    "residues": 8335,
+    "sha256": "a7de4ff83cb14ad7f220c4b40e16c6e346ea9f4a5edbc71cf4cd948504d79ea8"
+  },
+  "composition_comparison_with_all_51_training_proteins": {
+    "all": {
+      "jensen_shannon_divergence_bits": 0.031812714975467005,
+      "total_variation": 0.1609896632194979,
+      "missing_amino_acids": []
+    },
+    "<100": {
+      "jensen_shannon_divergence_bits": 0.0378637813439391,
+      "total_variation": 0.17528080156143466,
+      "missing_amino_acids": []
+    },
+    "100-200": {
+      "jensen_shannon_divergence_bits": 0.02478112939603572,
+      "total_variation": 0.14712433258875063,
+      "missing_amino_acids": []
+    },
+    ">200": {
+      "jensen_shannon_divergence_bits": 0.04210723030713685,
+      "total_variation": 0.2032634526881671,
+      "missing_amino_acids": []
+    }
+  },
+  "selection_and_limitations": "Compare LLPSDB v2.0 IDR composition with the 51 CALVADOS 2 Rg proteins.\n\nRun in the bff environment (pandas, openpyxl, matplotlib):\n    python examples/calvados/IDP_LLPS_datasets/analyze_llpsdb_idrs.py\n\nThe official positive/unambiguous ZIP and its two Excel tables are read in\nmemory only. No database files are saved. Derived results go to llpsdb_idr_analysis.\n\nSelection: natural, single-protein systems without nucleic acids, mutations,\nfusions, engineered repeats or PTMs. Cleaved constructs are allowed only when\ntheir sequence maps exactly to the parent sequence. Intersect tested construct\ncoordinates with the parent's LLPSDB IDR annotations, and merge overlapping\ncoverage per protein so repeated experiments do not multiply residue counts.\nThese are IDRs within LLPS-positive constructs; isolated IDR sufficiency is not\nimplied. LLPSDB IDR annotations can be curated or predicted (the export does\nnot distinguish these sources). No disorder prediction is performed here.\n\nStudy: https://doi.org/10.1093/bioinformatics/btac026\n",
+  "counting": "1-based inclusive parent coordinates; no minimum region length. Merge overlapping/adjacent tested IDR coverage per parent protein. Retain distinct parent proteins even if sequences match. Pool residue counts within bins; 100 and 200 belong to middle bin. Missing annotation and predicted/curated disorder are not equivalent. Dataset overlap/homology with CALVADOS is not removed; composition similarity alone does not establish model generalization."
+}

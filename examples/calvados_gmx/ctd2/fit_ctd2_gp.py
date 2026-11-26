@@ -14,8 +14,8 @@ CSV, metrics.json, and the held-out scatter.
 
 Run from the repository root:
 
-    python -m examples.calvados_gmx.fit_ctd2_gp          # 80/20
-    python -m examples.calvados_gmx.fit_ctd2_gp 0.1      # 90/10
+    python -m examples.calvados_gmx.ctd2.fit_ctd2_gp          # 80/20
+    python -m examples.calvados_gmx.ctd2.fit_ctd2_gp 0.1      # 90/10
 """
 
 import io

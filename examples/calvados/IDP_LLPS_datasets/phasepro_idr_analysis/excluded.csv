@@ -1,0 +1,110 @@
+accession,name,boundaries,annotation,reason
+Q75E28,Whi3,461-553,PolyQ tract,no explicit disorder annotation
+Q75E28,Whi3,606-694,RNA recognition motif (RRM),no explicit disorder annotation
+Q7ZXV8,BugZ,93-452,P/Q-rich low complexity region,no explicit disorder annotation
+P35637,FUS,1-526,Full protein sequence contributes to LLPS: PLD and RNA-binding domains (RRMs and RGGs),no explicit disorder annotation
+Q06787,FMRP,445-632,C-terminal R/G-rich RGG motif-containing LC region,no explicit disorder annotation
+Q92804,TAF15,234-320,RNA binding region RRM,no explicit disorder annotation
+Q13148,"TDP-43, TDP43",1-102,N-terminal region (ubiquitin-like domain+disordered region),mixed or folded-domain annotation
+Q01844,EWS,361-447,RNA binding region RRM,no explicit disorder annotation
+P09651,"HNRNPA1, HNRPA1",186-372,C-terminal G-rich prion-like LC region,no explicit disorder annotation
+P22626-2,"HNRNPA2B1, HNRPA2B1 ",1-341,"Full protein sequence contributes to LLPS: N-terminal RRMs, C-terminal prion-like LCD",no explicit disorder annotation
+P31483,TIA1,1-386,Full protein sequence contributes to LLPS: 3 RRM domains and IDR,mixed or folded-domain annotation
+O60500,Nephrin,1077-1241,"Negatively charged intracellular domain (NICD), blocks of high negative charge density with distributed aromatic hydrophobic residues and phosphorylated tyrosines",no explicit disorder annotation
+O00401,N-WASP,277-392,P-rich motifs,no explicit disorder annotation
+P16333,"NCK1, Nck",1-377,Full protein sequence contributes to LLPS: SH3-SH3-SH3-SH2 domains with 50 residue conserved linker between SH3_1 and SH3_2,no explicit disorder annotation
+P52948,NUP98 ,1-500,FG-rich repeats,no explicit disorder annotation
+P14907,"Nsp1, Nsp1p",2-601,FG-rich repeats with N-rich inter-FG spacers,no explicit disorder annotation
+Q02629,Nup100,1-959,FG-rich repeats with N/S-rich inter-FG spacers,no explicit disorder annotation
+P15502,Elastin,27-786,"Repeats of GVPGV of hydrophobic domains, KA- and KP-type cross-linking domains",no explicit disorder annotation
+G5EBV6,PGL-3,160-320,Self-interaction domain,no explicit disorder annotation
+G5EBV6,PGL-3,633-693,RGG domain,no explicit disorder annotation
+P32588,Pub1,1-453,Full protein sequence contributes to LLPS: 3 RRM domains and a prion-like N/Q-rich LC domain with RGG motif,no explicit disorder annotation
+Q96PK6,RBM14 ,350-669,Prion-like domain with 21 Y[G/N/A/S]AQ or [S/G]YG motifs,no explicit disorder annotation
+P45973,HP1α ,1-177,Full length protein without the C-terminal extension,no explicit disorder annotation
+P05205,HP1a,1-206,Only full-length protein studied,no explicit disorder annotation
+P04147,PAB1,38-400,4 RRMs,no explicit disorder annotation
+P04147,PAB1,419-502,P-rich LCR,no explicit disorder annotation
+Q22053,"Fibrillarin, fib-1 ",1-352,"RGG-rich region, methyltransferase domain",no explicit disorder annotation
+P06748,NPM1,1-294,"Full protein sequence contributes to LLPS: oligomerization domain, linker with acidic tracts, RRM",no explicit disorder annotation
+P91349,SPD-5,1-1198,Only full-length protein studied: coiled-coil domains,no explicit disorder annotation
+Q9UHD9,UBQLN2,450-624,STI1-II domain,no explicit disorder annotation
+P10636-8,"Tau-F, Tau",244-368,Tau/MAP repeats,no explicit disorder annotation
+J3QQ18,SynGAP,1147-1308,"C-terminal domain (coiled coil region dominated by hydrophobic residues, followed by a PDZ binding motif/PBM)",no explicit disorder annotation
+P17931,Galectin-3,20-100,Repeats of Y-P-G-X(3)-P-G-A,no explicit disorder annotation
+Q7YU08,Rbfox1,1-865,Only full-length protein studied,no explicit disorder annotation
+Q13501,p62,3-102,PB1 domain (oligomerization),no explicit disorder annotation
+Q13501,p62,389-440,UBA (polyUbi chain binding),no explicit disorder annotation
+P62993,GRB2,1-217,Full protein sequence contributes to LLPS: SH3-SH2-SH3 domain structure,no explicit disorder annotation
+Q07889,SOS1,1117-1319,Region containing multiple P-rich motifs,no explicit disorder annotation
+Q15233,NONO,218-272,NOPS domain for homodimerization or heterodimerization with SFPQ/PSF or PSPC1,no explicit disorder annotation
+P23246,SFPQ,1-707,Only full-length protein studied,no explicit disorder annotation
+Q9W1V3,Fib,1-344,Only full-length protein studied,no explicit disorder annotation
+Q7KTV5,Nopp140,1-686,Only full-length protein studied,no explicit disorder annotation
+Q9VD51,Pit,1-680,Only full-length protein studied,no explicit disorder annotation
+P53297,Pbp1,571-722,Low complexity region,no explicit disorder annotation
+O13828,Dcp2,1-289,N-terminal,no explicit disorder annotation
+O13828,Dcp2,553-771,and C-terminal regions,coordinates outside sequence
+O94752,Edc3,1-86,N-terminal region,no explicit disorder annotation
+O94752,Edc3,231-551,YjeF domain,coordinates outside sequence
+Q09737,Pdc1,1-750,N-terminal,coordinates outside sequence
+Q09737,Pdc1,880-1076,and C-terminal regions,coordinates outside sequence
+Q9W4I7,Pon,1-228,N-terminal fragment with two NUMB-interacting motifs,no explicit disorder annotation
+P16554,NUMB,65-203,PTB domain,no explicit disorder annotation
+P05453,Sup35,5-250,N-terminal prion domain (N) and a charged middle domain (M),no explicit disorder annotation
+Q8N884,cGAS,161-522,positively charged region for self association,no explicit disorder annotation
+H0WFA5,Buc,621-639,C-terminal tri-RG motif region,no explicit disorder annotation
+F1R237,Tdrd6,1-2117,Only full-length protein studied,no explicit disorder annotation
+P0A9A6,FtsZ,1-383,Only full-length protein studied,no explicit disorder annotation
+P0C093,SlmA,1-198,Only full-length protein studied,no explicit disorder annotation
+P22363,Protein P,92-297,"Domains DD (dimerisation), IDD2 and PCTD (N-RNA binding)",no explicit disorder annotation
+Q8JXF6,Protein N,1-450,Only full-length protein studied,no explicit disorder annotation
+Q07666,Sam68,1-197,G-rich N-terminal IDR and KH domain,mixed or folded-domain annotation
+Q14103,HNRNPD,1-355,Full protein sequence contributes to LLPS: RRMs and G/Q/Y-rich PLD,no explicit disorder annotation
+O43791,SPOP,28-359,Central region containing the ordered MATH (substrate binding) and BTB domains (dimerization and CUL3 binding),no explicit disorder annotation
+Q9UER7,DAXX,495-740,C-terminal region,no explicit disorder annotation
+P25158-2,Oskar,1-468,"Full protein sequence contributes to LLPS: Lotus (dimerization, VASA binding) and SGNH domains (RNA-binding) connected by an ID linker",no explicit disorder annotation
+Q5BI67,Sec16,1-1953,Only full-length protein studied,no explicit disorder annotation
+A1Z813,Sec24AB,1-415,LC region with polar and P-rich blocks,no explicit disorder annotation
+Q9VNF8,Sec23,1-773,Only full-length protein studied,no explicit disorder annotation
+P24928,RPB1,1593-1960,C-terminal tail with 52 heptade repeats of YSPTSPS,no explicit disorder annotation
+P04050,RPB1,1542-1733,C-terminal tail with 26 heptade repeats of YSPTSPS,no explicit disorder annotation
+P03520,Protein P,1-265,Only full-length protein studied,no explicit disorder annotation
+P03521,Protein N,1-422,Only full-length protein studied,no explicit disorder annotation
+P03523,Protein L,1-2109,Only full-length protein studied,no explicit disorder annotation
+P04156,PrP,23-111,"Prion domain with induced unfolding of alpha-helical Thr residues, induced alpha helix folding of Gly and Ala residues",no explicit disorder annotation
+P05067,Amyloid-beta oligomer,672-713,Amyloid-forming region,no explicit disorder annotation
+Q500V5,ADCP1,180-517,C-terminal Aganet domains 3-6,no explicit disorder annotation
+Q14781,CBX2,1-532,"Full protein sequence contributes to LLPS: AT-hook, phosphorylable S-tract, IDR with positive charges",mixed or folded-domain annotation
+P38996,Nab3,329-404,RNA recognition motif (RRM),no explicit disorder annotation
+P38996,Nab3,568-793,prion-like domain (PrLD),no explicit disorder annotation
+Q94ET8,EPYC1,52-291,Four almost identical ~60 amino-acid tandem repeats in EPYC1,no explicit disorder annotation
+Q9JIR1,RIM-BP2,164-231,SH3_1,no explicit disorder annotation
+Q9JIR1,RIM-BP2,848-916,SH3_2,no explicit disorder annotation
+Q9JIR1,RIM-BP2,952-1019,SH3_3 domains,no explicit disorder annotation
+Q8L3W1,VRN1,1-341,Full protein sequence contributes to LLPS: two B3 DNA-binding domains and an ID linker,no explicit disorder annotation
+Q07352,TIS11B,1-338,Full protein sequence contributes to LLPS (charge pattern required),no explicit disorder annotation
+Q60598,Cortactin,84-330,Cortactin repeats,no explicit disorder annotation
+O74718,Sup35,1-235,N-terminal prion domain (N) and a charged middle domain (M),no explicit disorder annotation
+P29590-12,PML,1-585,Only full-length protein studied,no explicit disorder annotation
+P78352-3,PSD-95,306-721,"C-terminal ""PSG"" region (composd of a PDZ domain, an SH3 domain, and a guanylatekinase domain)",no explicit disorder annotation
+Q9UKV8,AGO2,517-818,PIWI domain,no explicit disorder annotation
+P00873,Rubisco,68-80,surface-exposed alpha helice 1 of the small subunit,no explicit disorder annotation
+P00873,Rubisco,131-144,surface-exposed alpha helice 2 of the small subunit,no explicit disorder annotation
+Q9W4W2,Female sterile (1) Yb,1-1042,"Full protein sequence contributes to LLPS (HelC domain, RNA helicase domain, eTud domain)",no explicit disorder annotation
+P26368,U2AF65,27-62,RS domain,no explicit disorder annotation
+P26368,U2AF65,149-337,RRMs,no explicit disorder annotation
+P26368,U2AF65,385-466,UHM domain,no explicit disorder annotation
+Q14149,MORC3,1-400,ATPase domain,no explicit disorder annotation
+O65934,Rv1747,1-310,ABC transporter cytoplasmic regulatory module: FHA domains and ID linker,no explicit disorder annotation
+A0QSY1,MSMEG_1642,1-340,ABC transporter cytoplasmic regulatory module: FHA domains and ID linker,no explicit disorder annotation
+Q9Y5A9,"YTHDF2, DF2",1-409,Low complexity region with Pro-Xn-Gly motifs,no explicit disorder annotation
+Q9Y5A9,"YTHDF2, DF2",410-544,YTH domain,no explicit disorder annotation
+Q9BYJ9,"YTHDF1, DF1",1-388,Low complexity region with Pro-Xn-Gly motifs,no explicit disorder annotation
+Q9BYJ9,"YTHDF1, DF1",389-523,YTH domain,no explicit disorder annotation
+Q7Z739,"YTHDF3, DF3",1-415,Low complexity region with Pro-Xn-Gly motifs,no explicit disorder annotation
+Q7Z739,"YTHDF3, DF3",416-550,YTH domain,no explicit disorder annotation
+Q9U2F5,TIAR-2,328-434,C-terminal prion-like domain,no explicit disorder annotation
+Q8NE35,CPEB3,1-698,Only full-length protein studied,no explicit disorder annotation
+P35974,Phosphoprotein,459-507,XD domain,no explicit disorder annotation
+Q12888,53BP1,1203-1972,C-terminal half,no explicit disorder annotation

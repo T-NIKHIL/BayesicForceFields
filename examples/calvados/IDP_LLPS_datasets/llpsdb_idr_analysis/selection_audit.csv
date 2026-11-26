@@ -1,0 +1,2039 @@
+entry_id,protein_id,included,reason
+LLPS000001,p0001,True,eligible IDR coverage
+LLPS000109,p0003,False,not a single-protein system without nucleic acids
+LLPS001033,p0225,False,not a single-protein system without nucleic acids
+LLPS000006,p0001,True,eligible IDR coverage
+LLPS000008,p0001,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000014,p0001;p0226,False,not a single-protein system without nucleic acids
+LLPS000012,p0001;p0009,False,not a single-protein system without nucleic acids
+LLPS000015,p0001;p0226,False,not a single-protein system without nucleic acids
+LLPS000013,p0001;p0226,False,not a single-protein system without nucleic acids
+LLPS000009,p0001,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001027,p0217;p0001;p0009;p0218;p0226,False,not a single-protein system without nucleic acids
+LLPS001028,p0217;p0001;p0226;p0218,False,not a single-protein system without nucleic acids
+LLPS000016,p0002,True,eligible IDR coverage
+LLPS000040,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000050,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000062,p0002,True,eligible IDR coverage
+LLPS000145,p0006,True,eligible IDR coverage
+LLPS000146,p0006,False,not a single-protein system without nucleic acids
+LLPS000022,p0002,True,eligible IDR coverage
+LLPS000157,p0008,False,IDR coordinates outside parent sequence: 342-357
+LLPS000180,p0008;p0006,False,not a single-protein system without nucleic acids
+LLPS000177,p0008;p0002,False,not a single-protein system without nucleic acids
+LLPS000181,p0008;p0009,False,not a single-protein system without nucleic acids
+LLPS000179,p0008;p0005,False,not a single-protein system without nucleic acids
+LLPS000178,p0008;p0004,False,not a single-protein system without nucleic acids
+LLPS000159,p0008,False,not a single-protein system without nucleic acids
+LLPS000198,p0010;p0002,False,not a single-protein system without nucleic acids
+LLPS000235,p0014;p0002;p0015,False,not a single-protein system without nucleic acids
+LLPS000236,p0014;p0002;p0015,False,not a single-protein system without nucleic acids
+LLPS000237,p0014;p0002;p0015,False,not a single-protein system without nucleic acids
+LLPS000238,p0014;p0002;p0015,False,not a single-protein system without nucleic acids
+LLPS000241,p0014;p0002;p0015,False,not a single-protein system without nucleic acids
+LLPS000242,p0014;p0002;p0015,False,not a single-protein system without nucleic acids
+LLPS000243,p0014;p0002;p0015,False,not a single-protein system without nucleic acids
+LLPS000244,p0014;p0002;p0015,False,not a single-protein system without nucleic acids
+LLPS000245,p0014;p0002;p0015,False,not a single-protein system without nucleic acids
+LLPS000246,p0014;p0002;p0015,False,not a single-protein system without nucleic acids
+LLPS000091,p0002;p0027,False,not a single-protein system without nucleic acids
+LLPS000031,p0002,True,eligible IDR coverage
+LLPS000035,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000019,p0002,False,not a single-protein system without nucleic acids
+LLPS000023,p0002,True,eligible IDR coverage
+LLPS000054,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000056,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000075,p0002,False,not a single-protein system without nucleic acids
+LLPS000076,p0002,False,not a single-protein system without nucleic acids
+LLPS000093,p0002;p0108,False,not a single-protein system without nucleic acids
+LLPS000028,p0002,True,eligible IDR coverage
+LLPS000087,p0002,False,not a single-protein system without nucleic acids
+LLPS000029,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000090,p0002,False,not a single-protein system without nucleic acids
+LLPS000099,p0002;p0149,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000037,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000048,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000052,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000047,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000041,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000043,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000042,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000851,p0150;p0002,False,not a single-protein system without nucleic acids
+LLPS000017,p0002,False,not a single-protein system without nucleic acids
+LLPS000020,p0002,False,not a single-protein system without nucleic acids
+LLPS000021,p0002,False,not a single-protein system without nucleic acids
+LLPS000077,p0002,False,not a single-protein system without nucleic acids
+LLPS000034,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000096,p0002;p0148,False,not a single-protein system without nucleic acids
+LLPS000095,p0002;p0147,False,not a single-protein system without nucleic acids
+LLPS000102,p0002;p0151,False,not a single-protein system without nucleic acids
+LLPS000070,p0002,False,not a single-protein system without nucleic acids
+LLPS000071,p0002,False,not a single-protein system without nucleic acids
+LLPS000106,p0002;p0151,False,not a single-protein system without nucleic acids
+LLPS000063,p0002,True,eligible IDR coverage
+LLPS000103,p0002;p0151,False,not a single-protein system without nucleic acids
+LLPS000107,p0002;p0151,False,not a single-protein system without nucleic acids
+LLPS000032,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000033,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000097,p0002;p0149,False,not a single-protein system without nucleic acids
+LLPS000098,p0002;p0149,False,not a single-protein system without nucleic acids
+LLPS000100,p0002;p0150,False,not a single-protein system without nucleic acids
+LLPS000101,p0002;p0150,False,not a single-protein system without nucleic acids
+LLPS000065,p0002,True,eligible IDR coverage
+LLPS000086,p0002,False,not a single-protein system without nucleic acids
+LLPS000039,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000045,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000036,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000059,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000060,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000046,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000058,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000027,p0002,True,eligible IDR coverage
+LLPS000064,p0002,True,eligible IDR coverage
+LLPS000085,p0002,False,not a single-protein system without nucleic acids
+LLPS000083,p0002,False,not a single-protein system without nucleic acids
+LLPS000079,p0002,False,not a single-protein system without nucleic acids
+LLPS000078,p0002,False,not a single-protein system without nucleic acids
+LLPS000081,p0002,False,not a single-protein system without nucleic acids
+LLPS000084,p0002,False,not a single-protein system without nucleic acids
+LLPS000082,p0002,False,not a single-protein system without nucleic acids
+LLPS000080,p0002,False,not a single-protein system without nucleic acids
+LLPS000073,p0002,False,not a single-protein system without nucleic acids
+LLPS000092,p0002;p0038,False,not a single-protein system without nucleic acids
+LLPS000164,p0008,False,IDR coordinates outside parent sequence: 342-357
+LLPS000165,p0008,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000168,p0008,False,IDR coordinates outside parent sequence: 342-357
+LLPS000207,p0010;p0004,False,not a single-protein system without nucleic acids
+LLPS000209,p0010;p0006,False,not a single-protein system without nucleic acids
+LLPS000197,p0010;p0002,False,not a single-protein system without nucleic acids
+LLPS000212,p0010;p0009,False,not a single-protein system without nucleic acids
+LLPS000208,p0010;p0005,False,not a single-protein system without nucleic acids
+LLPS000206,p0010;p0004,False,not a single-protein system without nucleic acids
+LLPS000211,p0010;p0007,False,not a single-protein system without nucleic acids
+LLPS000210,p0010;p0006,False,not a single-protein system without nucleic acids
+LLPS000147,p0007,True,eligible IDR coverage
+LLPS000203,p0010;p0002;p0006,False,not a single-protein system without nucleic acids
+LLPS000200,p0010;p0002,False,not a single-protein system without nucleic acids
+LLPS000205,p0010;p0002;p0009,False,not a single-protein system without nucleic acids
+LLPS000202,p0010;p0002;p0005,False,not a single-protein system without nucleic acids
+LLPS000201,p0010;p0002;p0004,False,not a single-protein system without nucleic acids
+LLPS000204,p0010;p0002;p0007,False,not a single-protein system without nucleic acids
+LLPS000161,p0008,False,not a single-protein system without nucleic acids
+LLPS000190,p0008;p0151,False,not a single-protein system without nucleic acids
+LLPS000194,p0010,False,not a single-protein system without nucleic acids
+LLPS000195,p0010,False,not a single-protein system without nucleic acids
+LLPS000256,p0014;p0015,False,not a single-protein system without nucleic acids
+LLPS000624,p0050;p0055;p0054;p0014,False,not a single-protein system without nucleic acids
+LLPS000566,p0045;p0014,False,not a single-protein system without nucleic acids
+LLPS000310,p0017,True,eligible IDR coverage
+LLPS000313,p0017,True,eligible IDR coverage
+LLPS000311,p0017,True,eligible IDR coverage
+LLPS000312,p0017,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000314,p0018,True,eligible IDR coverage
+LLPS000315,p0019,True,eligible IDR coverage
+LLPS000317,p0019,False,not a single-protein system without nucleic acids
+LLPS000320,p0019,True,eligible IDR coverage
+LLPS000321,p0019,False,not a single-protein system without nucleic acids
+LLPS000316,p0019,False,not a single-protein system without nucleic acids
+LLPS000364,p0020;p0041,False,not a single-protein system without nucleic acids
+LLPS000365,p0020;p0041,False,not a single-protein system without nucleic acids
+LLPS000328,p0020,False,not a single-protein system without nucleic acids
+LLPS000367,p0020;p0041,False,not a single-protein system without nucleic acids
+LLPS000370,p0020;p0041,False,not a single-protein system without nucleic acids
+LLPS000372,p0020;p0041,False,not a single-protein system without nucleic acids
+LLPS000324,p0020,False,construct does not map uniquely and exactly to parent
+LLPS000327,p0020,False,not a single-protein system without nucleic acids
+LLPS000376,p0020;p0043,False,not a single-protein system without nucleic acids
+LLPS000379,p0020;p0043,False,not a single-protein system without nucleic acids
+LLPS000336,p0020,False,construct does not map uniquely and exactly to parent
+LLPS000380,p0020;p0043,False,not a single-protein system without nucleic acids
+LLPS000333,p0020,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000338,p0020,False,not a single-protein system without nucleic acids
+LLPS000337,p0020,False,not a single-protein system without nucleic acids
+LLPS000382,p0020;p0043,False,not a single-protein system without nucleic acids
+LLPS000383,p0020;p0043,False,not a single-protein system without nucleic acids
+LLPS000377,p0020;p0043,False,not a single-protein system without nucleic acids
+LLPS000392,p0021;p0022,False,not a single-protein system without nucleic acids
+LLPS000395,p0021;p0022;p0220,False,not a single-protein system without nucleic acids
+LLPS000442,p0023,True,eligible IDR coverage
+LLPS000453,p0023,False,not a single-protein system without nucleic acids
+LLPS000431,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000432,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000438,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000436,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000422,p0023,True,eligible IDR coverage
+LLPS000428,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000430,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000440,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000425,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000429,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000427,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000426,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000434,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000437,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000439,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000412,p0023,True,eligible IDR coverage
+LLPS000725,p0117;p0023,False,not a single-protein system without nucleic acids
+LLPS000413,p0023,False,not a single-protein system without nucleic acids
+LLPS000417,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000414,p0023,False,not a single-protein system without nucleic acids
+LLPS000464,p0024,True,eligible IDR coverage
+LLPS000480,p0026,False,not a natural protein
+LLPS000481,p0027,False,not a natural protein
+LLPS000484,p0027,False,not a single-protein system without nucleic acids
+LLPS000485,p0027;p0029,False,not a single-protein system without nucleic acids
+LLPS000726,p0117;p0027,False,not a single-protein system without nucleic acids
+LLPS000482,p0027,False,not a natural protein
+LLPS000486,p0030,False,no annotated parent IDR
+LLPS000487,p0031,False,not a single-protein system without nucleic acids
+LLPS000490,p0031,False,not a single-protein system without nucleic acids
+LLPS000489,p0031,False,not a single-protein system without nucleic acids
+LLPS000491,p0031,False,not a single-protein system without nucleic acids
+LLPS000488,p0031,False,not a single-protein system without nucleic acids
+LLPS000497,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS000498,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000499,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS000510,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS000513,p0032,False,not a single-protein system without nucleic acids
+LLPS000514,p0032,False,not a single-protein system without nucleic acids
+LLPS000515,p0032,False,not a single-protein system without nucleic acids
+LLPS000512,p0032,False,not a single-protein system without nucleic acids
+LLPS000502,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000501,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000518,p0032,False,not a single-protein system without nucleic acids
+LLPS000496,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000511,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000504,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000506,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000507,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000503,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000508,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS000492,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS000493,p0032,False,not a single-protein system without nucleic acids
+LLPS000494,p0032;p0224;p0244,False,not a single-protein system without nucleic acids
+LLPS000495,p0032;p0224;p0244,False,not a single-protein system without nucleic acids
+LLPS000527,p0033;p0034,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000520,p0033,False,not a single-protein system without nucleic acids
+LLPS000523,p0033,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000522,p0033,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000529,p0033;p0035,False,not a single-protein system without nucleic acids
+LLPS000525,p0033,False,no annotated parent IDR
+LLPS000528,p0033;p0035,False,not a single-protein system without nucleic acids
+LLPS000534,p0037,False,not a natural protein
+LLPS000535,p0038,True,eligible IDR coverage
+LLPS000543,p0038,True,eligible IDR coverage
+LLPS000542,p0038,True,eligible IDR coverage
+LLPS000559,p0038,False,not a single-protein system without nucleic acids
+LLPS000538,p0038,False,construct does not map uniquely and exactly to parent
+LLPS000698,p0109;p0039,False,not a single-protein system without nucleic acids
+LLPS000581,p0046;p0255,False,not a single-protein system without nucleic acids
+LLPS000582,p0046;p0255,False,not a single-protein system without nucleic acids
+LLPS000572,p0046;p0171,False,not a single-protein system without nucleic acids
+LLPS000573,p0046;p0171,False,not a single-protein system without nucleic acids
+LLPS000574,p0046;p0171,False,not a single-protein system without nucleic acids
+LLPS000575,p0046;p0171,False,not a single-protein system without nucleic acids
+LLPS000576,p0046;p0171,False,not a single-protein system without nucleic acids
+LLPS000577,p0046;p0171,False,not a single-protein system without nucleic acids
+LLPS000579,p0046;p0171,False,not a single-protein system without nucleic acids
+LLPS000580,p0046;p0171,False,not a single-protein system without nucleic acids
+LLPS000578,p0046;p0171,False,not a single-protein system without nucleic acids
+LLPS000592,p0048,False,construct does not map uniquely and exactly to parent
+LLPS000591,p0048,False,construct does not map uniquely and exactly to parent
+LLPS000586,p0048,False,construct does not map uniquely and exactly to parent
+LLPS000587,p0048,False,construct does not map uniquely and exactly to parent
+LLPS000584,p0048,False,construct does not map uniquely and exactly to parent
+LLPS000588,p0048,False,construct does not map uniquely and exactly to parent
+LLPS000589,p0048,False,construct does not map uniquely and exactly to parent
+LLPS000590,p0048,False,construct does not map uniquely and exactly to parent
+LLPS000594,p0049,True,eligible IDR coverage
+LLPS000609,p0049;p0146,False,not a single-protein system without nucleic acids
+LLPS000610,p0049;p0146,False,not a single-protein system without nucleic acids
+LLPS000599,p0049,False,not a single-protein system without nucleic acids
+LLPS000597,p0049,False,not a single-protein system without nucleic acids
+LLPS000598,p0049,False,not a single-protein system without nucleic acids
+LLPS000600,p0049,False,not a single-protein system without nucleic acids
+LLPS000943,p0175;p0049,False,not a single-protein system without nucleic acids
+LLPS000946,p0175;p0049;p0176,False,not a single-protein system without nucleic acids
+LLPS000944,p0175;p0049,False,not a single-protein system without nucleic acids
+LLPS000948,p0175;p0049;p0176,False,not a single-protein system without nucleic acids
+LLPS000945,p0175;p0049,False,not a single-protein system without nucleic acids
+LLPS000949,p0175;p0049;p0176,False,not a single-protein system without nucleic acids
+LLPS000952,p0177;p0175;p0049;p0176,False,not a single-protein system without nucleic acids
+LLPS000947,p0175;p0049;p0176,False,not a single-protein system without nucleic acids
+LLPS000623,p0050;p0055;p0054,False,not a single-protein system without nucleic acids
+LLPS000616,p0050;p0051;p0052,False,not a single-protein system without nucleic acids
+LLPS000776,p0132;p0051,False,not a single-protein system without nucleic acids
+LLPS000625,p0056,False,not a natural protein
+LLPS000626,p0057,False,not a natural protein
+LLPS000627,p0058,False,not a natural protein
+LLPS000628,p0059,False,not a natural protein
+LLPS000629,p0060,False,not a natural protein
+LLPS000630,p0061,False,not a natural protein
+LLPS000631,p0062,False,not a natural protein
+LLPS000632,p0063,False,not a natural protein
+LLPS000633,p0064,False,not a natural protein
+LLPS000634,p0065,False,not a natural protein
+LLPS000635,p0066,False,not a natural protein
+LLPS000636,p0067,False,not a natural protein
+LLPS000637,p0068,False,not a natural protein
+LLPS000638,p0069,False,not a natural protein
+LLPS000639,p0070,False,not a natural protein
+LLPS000640,p0071,False,not a natural protein
+LLPS000641,p0072,False,not a natural protein
+LLPS000642,p0073,False,not a natural protein
+LLPS000643,p0074,False,not a natural protein
+LLPS000644,p0075,False,not a natural protein
+LLPS000645,p0076,False,not a natural protein
+LLPS000646,p0077,False,not a natural protein
+LLPS000647,p0078,False,not a natural protein
+LLPS000648,p0079,False,not a natural protein
+LLPS000649,p0080,False,not a natural protein
+LLPS000650,p0081,False,not a natural protein
+LLPS000651,p0082,False,not a natural protein
+LLPS000652,p0083,False,not a natural protein
+LLPS000653,p0084,False,not a natural protein
+LLPS000654,p0085,False,not a natural protein
+LLPS000655,p0086,False,not a natural protein
+LLPS000656,p0087,False,not a natural protein
+LLPS000657,p0088,False,not a natural protein
+LLPS000658,p0089,False,not a natural protein
+LLPS000659,p0090,False,not a natural protein
+LLPS000660,p0091,False,not a natural protein
+LLPS000661,p0092,False,not a natural protein
+LLPS000662,p0093,False,not a natural protein
+LLPS000663,p0094,False,not a natural protein
+LLPS000664,p0095,False,not a natural protein
+LLPS000665,p0096,False,not a natural protein
+LLPS000668,p0097,False,not a natural protein
+LLPS000667,p0097,False,not a natural protein
+LLPS000669,p0100,False,not a natural protein
+LLPS000670,p0101,False,not a natural protein
+LLPS000820,p0143;p0102;p0103,False,not a single-protein system without nucleic acids
+LLPS000674,p0102;p0103,False,not a single-protein system without nucleic acids
+LLPS000682,p0104;p0103,False,not a single-protein system without nucleic acids
+LLPS000683,p0105,True,eligible IDR coverage
+LLPS000699,p0109;p0039,False,not a single-protein system without nucleic acids
+LLPS000700,p0109;p0039,False,not a single-protein system without nucleic acids
+LLPS000706,p0109;p0039;p0110,False,not a single-protein system without nucleic acids
+LLPS000705,p0109;p0039,False,not a single-protein system without nucleic acids
+LLPS000702,p0109;p0039,False,not a single-protein system without nucleic acids
+LLPS000711,p0112,False,no annotated parent IDR
+LLPS000712,p0113,False,no annotated parent IDR
+LLPS000713,p0114,False,no annotated parent IDR
+LLPS000714,p0115,False,no annotated parent IDR
+LLPS000715,p0116,True,eligible IDR coverage
+LLPS000716,p0117,False,construct does not map uniquely and exactly to parent
+LLPS000721,p0117,True,eligible IDR coverage
+LLPS000722,p0117,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000723,p0117,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000724,p0117,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000719,p0117,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000720,p0117,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000717,p0117,True,eligible IDR coverage
+LLPS000732,p0118,False,no annotated parent IDR
+LLPS000733,p0119,True,eligible IDR coverage
+LLPS000734,p0120,False,no annotated parent IDR
+LLPS000736,p0120,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000735,p0120,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000737,p0121,True,eligible IDR coverage
+LLPS000738,p0122,True,eligible IDR coverage
+LLPS000739,p0123,True,eligible IDR coverage
+LLPS000740,p0124,False,no annotated parent IDR
+LLPS000741,p0125,False,no annotated parent IDR
+LLPS000742,p0126,False,no annotated parent IDR
+LLPS000743,p0127,False,construct does not map uniquely and exactly to parent
+LLPS000772,p0132,True,eligible IDR coverage
+LLPS000778,p0132;p0134,False,not a single-protein system without nucleic acids
+LLPS000777,p0132;p0133,False,not a single-protein system without nucleic acids
+LLPS000774,p0132,True,eligible IDR coverage
+LLPS000779,p0133,True,eligible IDR coverage
+LLPS000819,p0141;p0139,False,not a single-protein system without nucleic acids
+LLPS000806,p0139,True,eligible IDR coverage
+LLPS000808,p0139;p0140,False,not a single-protein system without nucleic acids
+LLPS000812,p0139;p0141;p0140,False,not a single-protein system without nucleic acids
+LLPS000815,p0139;p0141;p0140;p0142,False,not a single-protein system without nucleic acids
+LLPS000817,p0139;p0142,False,not a single-protein system without nucleic acids
+LLPS000818,p0141,False,no annotated parent IDR
+LLPS000831,p0144,False,no annotated parent IDR
+LLPS000837,p0149,True,eligible IDR coverage
+LLPS000841,p0149,False,not a single-protein system without nucleic acids
+LLPS000838,p0149,False,not a single-protein system without nucleic acids
+LLPS000842,p0150,False,IDR coordinates outside parent sequence: 373-592
+LLPS000850,p0150,False,not a single-protein system without nucleic acids
+LLPS000847,p0150,False,IDR coordinates outside parent sequence: 373-592
+LLPS000848,p0150,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000846,p0150,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000843,p0150,False,not a single-protein system without nucleic acids
+LLPS000854,p0152,False,no annotated parent IDR
+LLPS000856,p0152,False,not a single-protein system without nucleic acids
+LLPS000868,p0153,False,not a single-protein system without nucleic acids
+LLPS000860,p0153,False,not a natural protein
+LLPS000861,p0153,False,not a natural protein
+LLPS000863,p0153,False,not a natural protein
+LLPS000864,p0153,False,not a natural protein
+LLPS000865,p0153,False,not a natural protein
+LLPS000866,p0153,False,not a natural protein
+LLPS000867,p0153,False,not a natural protein
+LLPS000691,p0108,True,eligible IDR coverage
+LLPS000869,p0154,True,eligible IDR coverage
+LLPS000695,p0108;p0154,False,not a single-protein system without nucleic acids
+LLPS000871,p0154,False,not a single-protein system without nucleic acids
+LLPS000872,p0154;p0108,False,not a single-protein system without nucleic acids
+LLPS000875,p0157,True,eligible IDR coverage
+LLPS000877,p0159;p0160,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000878,p0159;p0160,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000876,p0159;p0160,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000880,p0161;p0160;p0162,False,not a natural protein
+LLPS000884,p0165;p0166,False,not a single-protein system without nucleic acids
+LLPS000888,p0165;p0166,False,not a single-protein system without nucleic acids
+LLPS000889,p0165;p0166,False,not a single-protein system without nucleic acids
+LLPS000890,p0165;p0167,False,not a single-protein system without nucleic acids
+LLPS000891,p0166,True,eligible IDR coverage
+LLPS000894,p0168,False,not a single-protein system without nucleic acids
+LLPS000896,p0168;p0169,False,not a single-protein system without nucleic acids
+LLPS000897,p0168;p0169,False,not a single-protein system without nucleic acids
+LLPS000908,p0170;p0221;p0171,False,not a single-protein system without nucleic acids
+LLPS000920,p0171,False,not a single-protein system without nucleic acids
+LLPS000921,p0171,False,not a single-protein system without nucleic acids
+LLPS000919,p0171,False,not a single-protein system without nucleic acids
+LLPS000937,p0174,False,not a single-protein system without nucleic acids
+LLPS000938,p0175,True,eligible IDR coverage
+LLPS000941,p0175,True,eligible IDR coverage
+LLPS000958,p0178,False,not a single-protein system without nucleic acids
+LLPS000957,p0178,False,not a single-protein system without nucleic acids
+LLPS000963,p0179,False,not a single-protein system without nucleic acids
+LLPS000962,p0179,False,not a single-protein system without nucleic acids
+LLPS000964,p0181;p0223;p0182,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000965,p0183,False,not a natural protein
+LLPS000966,p0184,False,not a natural protein
+LLPS000967,p0185,False,not a natural protein
+LLPS000968,p0186,False,no annotated parent IDR
+LLPS000974,p0188;p0187,False,not a single-protein system without nucleic acids
+LLPS000969,p0187,False,no annotated parent IDR
+LLPS000976,p0189;p0187,False,not a single-protein system without nucleic acids
+LLPS000978,p0192;p0193;p0187,False,not a single-protein system without nucleic acids
+LLPS000973,p0188;p0187,False,not a single-protein system without nucleic acids
+LLPS000972,p0188;p0187,False,not a single-protein system without nucleic acids
+LLPS000971,p0188;p0187,False,not a single-protein system without nucleic acids
+LLPS000975,p0188;p0187,False,not a single-protein system without nucleic acids
+LLPS001070,p0255,False,not a single-protein system without nucleic acids
+LLPS000994,p0203,False,not a natural protein
+LLPS001030,p0222;p0270,False,not a single-protein system without nucleic acids
+LLPS001031,p0222;p0270,False,not a single-protein system without nucleic acids
+LLPS001032,p0222;p0270,False,not a single-protein system without nucleic acids
+LLPS001029,p0222;p0270,False,not a single-protein system without nucleic acids
+LLPS001021,p0216,False,no annotated parent IDR
+LLPS001022,p0216,False,not a single-protein system without nucleic acids
+LLPS000018,p0002,False,not a single-protein system without nucleic acids
+LLPS000618,p0050;p0051;p0052,False,not a single-protein system without nucleic acids
+LLPS000614,p0050;p0051;p0052,False,not a single-protein system without nucleic acids
+LLPS000424,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000558,p0038,False,not a single-protein system without nucleic acids
+LLPS000595,p0049,False,not a single-protein system without nucleic acids
+LLPS000611,p0049;p0176,False,not a single-protein system without nucleic acids
+LLPS000605,p0049,True,eligible IDR coverage
+LLPS001071,p0256,False,not a natural protein
+LLPS000892,p0167,True,eligible IDR coverage
+LLPS001023,p0216,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001024,p0216,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000217,p0011,True,eligible IDR coverage
+LLPS000220,p0011,False,not a single-protein system without nucleic acids
+LLPS000221,p0011,False,not a single-protein system without nucleic acids
+LLPS000108,p0003,False,no annotated parent IDR
+LLPS000120,p0003,False,not a single-protein system without nucleic acids
+LLPS000128,p0003,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000127,p0003,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000129,p0003,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000133,p0003,False,not a single-protein system without nucleic acids
+LLPS000132,p0003,False,not a single-protein system without nucleic acids
+LLPS000134,p0003,False,not a single-protein system without nucleic acids
+LLPS000135,p0003,False,not a single-protein system without nucleic acids
+LLPS000121,p0003,False,not a single-protein system without nucleic acids
+LLPS000116,p0003,False,not a single-protein system without nucleic acids
+LLPS000114,p0003,False,not a single-protein system without nucleic acids
+LLPS000115,p0003,False,not a single-protein system without nucleic acids
+LLPS000112,p0003,False,not a single-protein system without nucleic acids
+LLPS000113,p0003,False,not a single-protein system without nucleic acids
+LLPS000118,p0003,False,not a single-protein system without nucleic acids
+LLPS000110,p0003,False,not a single-protein system without nucleic acids
+LLPS000125,p0003,False,not a single-protein system without nucleic acids
+LLPS000124,p0003,False,not a single-protein system without nucleic acids
+LLPS000122,p0003,False,not a single-protein system without nucleic acids
+LLPS000111,p0003,False,not a single-protein system without nucleic acids
+LLPS000123,p0003,False,not a single-protein system without nucleic acids
+LLPS000117,p0003,False,not a single-protein system without nucleic acids
+LLPS000175,p0008,False,not a single-protein system without nucleic acids
+LLPS000176,p0008,False,not a single-protein system without nucleic acids
+LLPS000346,p0020;p0026,False,not a single-protein system without nucleic acids
+LLPS000351,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000261,p0014;p0045;p0046,False,not a single-protein system without nucleic acids
+LLPS000583,p0047;p0273,False,not a single-protein system without nucleic acids
+LLPS000140,p0004,True,eligible IDR coverage
+LLPS000141,p0004,False,construct does not map uniquely and exactly to parent
+LLPS000137,p0004,True,eligible IDR coverage
+LLPS000138,p0004,False,not a single-protein system without nucleic acids
+LLPS000744,p0128,False,tested construct does not overlap an annotated IDR
+LLPS000745,p0129,False,no annotated parent IDR
+LLPS000749,p0129;p0128,False,not a single-protein system without nucleic acids
+LLPS000748,p0129;p0009,False,not a single-protein system without nucleic acids
+LLPS000225,p0012;p0013,False,not a single-protein system without nucleic acids
+LLPS000463,p0024,True,eligible IDR coverage
+LLPS000873,p0155,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000874,p0156,False,no annotated parent IDR
+LLPS000213,p0011,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000214,p0011,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000727,p0117;p0158,False,not a single-protein system without nucleic acids
+LLPS000730,p0117;p0158,False,not a single-protein system without nucleic acids
+LLPS000728,p0117;p0158,False,not a single-protein system without nucleic acids
+LLPS000729,p0117;p0158,False,not a single-protein system without nucleic acids
+LLPS000731,p0117;p0158,False,not a single-protein system without nucleic acids
+LLPS000222,p0011;p0023,False,not a single-protein system without nucleic acids
+LLPS000223,p0011;p0023,False,not a single-protein system without nucleic acids
+LLPS000227,p0012;p0013,False,not a single-protein system without nucleic acids
+LLPS000257,p0014;p0015,False,not a single-protein system without nucleic acids
+LLPS000196,p0010,False,not a single-protein system without nucleic acids
+LLPS000228,p0012;p0013,False,not a single-protein system without nucleic acids
+LLPS000229,p0012;p0013,False,not a single-protein system without nucleic acids
+LLPS000226,p0012;p0013,False,not a single-protein system without nucleic acids
+LLPS000234,p0012;p0013,False,not a single-protein system without nucleic acids
+LLPS000230,p0012;p0013,False,not a single-protein system without nucleic acids
+LLPS000232,p0012;p0013,False,not a single-protein system without nucleic acids
+LLPS000231,p0012;p0013,False,not a single-protein system without nucleic acids
+LLPS000233,p0012;p0013,False,not a single-protein system without nucleic acids
+LLPS000996,p0204;p0129,False,not a single-protein system without nucleic acids
+LLPS001000,p0205;p0129,False,not a single-protein system without nucleic acids
+LLPS001115,p0270;p0129,False,not a single-protein system without nucleic acids
+LLPS000997,p0204;p0129,False,not a single-protein system without nucleic acids
+LLPS000998,p0204;p0129,False,not a single-protein system without nucleic acids
+LLPS001001,p0207,True,eligible IDR coverage
+LLPS001005,p0209,True,eligible IDR coverage
+LLPS001007,p0210,True,eligible IDR coverage
+LLPS001009,p0211,True,eligible IDR coverage
+LLPS001011,p0212,False,no annotated parent IDR
+LLPS001013,p0213,True,eligible IDR coverage
+LLPS001002,p0207;p0129,False,not a single-protein system without nucleic acids
+LLPS001004,p0208;p0129,False,not a single-protein system without nucleic acids
+LLPS001006,p0209;p0129,False,not a single-protein system without nucleic acids
+LLPS001008,p0210;p0129,False,not a single-protein system without nucleic acids
+LLPS001010,p0211;p0129,False,not a single-protein system without nucleic acids
+LLPS001012,p0212;p0129,False,not a single-protein system without nucleic acids
+LLPS001014,p0213;p0129,False,not a single-protein system without nucleic acids
+LLPS000747,p0129,False,no annotated parent IDR
+LLPS001015,p0213;p0129,False,not a single-protein system without nucleic acids
+LLPS001016,p0214,True,eligible IDR coverage
+LLPS001020,p0215,True,eligible IDR coverage
+LLPS001018,p0214;p0215,False,not a single-protein system without nucleic acids
+LLPS001017,p0214,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001019,p0214;p0215,False,not a single-protein system without nucleic acids
+LLPS000832,p0145,True,eligible IDR coverage
+LLPS000833,p0145,False,not a single-protein system without nucleic acids
+LLPS000836,p0145;p0146,False,not a single-protein system without nucleic acids
+LLPS000834,p0145,True,eligible IDR coverage
+LLPS000835,p0145,False,not a single-protein system without nucleic acids
+LLPS000811,p0139;p0140,False,not a single-protein system without nucleic acids
+LLPS000809,p0139;p0140,False,not a single-protein system without nucleic acids
+LLPS000814,p0139;p0141;p0140,False,not a single-protein system without nucleic acids
+LLPS000813,p0139;p0141;p0140,False,not a single-protein system without nucleic acids
+LLPS000816,p0139;p0141;p0140;p0142,False,not a single-protein system without nucleic acids
+LLPS000807,p0139;p0140,False,not a single-protein system without nucleic acids
+LLPS000799,p0138,True,eligible IDR coverage
+LLPS000803,p0138,True,eligible IDR coverage
+LLPS000750,p0130,False,not a single-protein system without nucleic acids
+LLPS000751,p0130,False,not a single-protein system without nucleic acids
+LLPS000752,p0130,False,not a single-protein system without nucleic acids
+LLPS000753,p0130,False,not a single-protein system without nucleic acids
+LLPS000754,p0130,False,not a single-protein system without nucleic acids
+LLPS000763,p0131,False,not a single-protein system without nucleic acids
+LLPS000764,p0131,False,not a single-protein system without nucleic acids
+LLPS000765,p0131,False,not a single-protein system without nucleic acids
+LLPS000766,p0131,False,not a single-protein system without nucleic acids
+LLPS000762,p0131,False,not a single-protein system without nucleic acids
+LLPS000755,p0130,False,not a single-protein system without nucleic acids
+LLPS000756,p0130,False,not a single-protein system without nucleic acids
+LLPS000784,p0136;p0137,False,not a single-protein system without nucleic acids
+LLPS000790,p0136;p0137,False,not a single-protein system without nucleic acids
+LLPS000789,p0136;p0137,False,not a single-protein system without nucleic acids
+LLPS000785,p0136;p0137,False,not a single-protein system without nucleic acids
+LLPS000787,p0136;p0137,False,not a single-protein system without nucleic acids
+LLPS000786,p0136;p0137,False,not a single-protein system without nucleic acids
+LLPS000788,p0136;p0137,False,not a single-protein system without nucleic acids
+LLPS000791,p0136;p0137,False,not a single-protein system without nucleic acids
+LLPS000783,p0136;p0137,False,not a single-protein system without nucleic acids
+LLPS000305,p0016,False,not a single-protein system without nucleic acids
+LLPS000291,p0016,False,not a single-protein system without nucleic acids
+LLPS000302,p0016,False,not a single-protein system without nucleic acids
+LLPS000306,p0016,False,not a single-protein system without nucleic acids
+LLPS000308,p0016,False,not a single-protein system without nucleic acids
+LLPS000289,p0016,False,not a single-protein system without nucleic acids
+LLPS000292,p0016,False,not a single-protein system without nucleic acids
+LLPS000294,p0016,False,not a single-protein system without nucleic acids
+LLPS000290,p0016,False,not a single-protein system without nucleic acids
+LLPS000304,p0016,False,not a single-protein system without nucleic acids
+LLPS000307,p0016,False,not a single-protein system without nucleic acids
+LLPS000293,p0016,False,not a single-protein system without nucleic acids
+LLPS000287,p0016,False,not a single-protein system without nucleic acids
+LLPS000801,p0138,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000800,p0138,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000802,p0138,True,eligible IDR coverage
+LLPS000804,p0138,False,not a single-protein system without nucleic acids
+LLPS000805,p0138,False,not a single-protein system without nucleic acids
+LLPS000685,p0106,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000687,p0106;p0108,False,not a single-protein system without nucleic acids
+LLPS000688,p0106;p0108,False,not a single-protein system without nucleic acids
+LLPS000684,p0106,False,no annotated parent IDR
+LLPS000689,p0107,True,eligible IDR coverage
+LLPS000707,p0111,True,eligible IDR coverage
+LLPS000709,p0111,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000459,p0024,False,not a single-protein system without nucleic acids
+LLPS000472,p0024,False,not a single-protein system without nucleic acids
+LLPS000477,p0024,False,not a single-protein system without nucleic acids
+LLPS000467,p0024,False,not a single-protein system without nucleic acids
+LLPS000470,p0024,False,not a single-protein system without nucleic acids
+LLPS000468,p0024,False,not a single-protein system without nucleic acids
+LLPS000469,p0024,False,not a single-protein system without nucleic acids
+LLPS000465,p0024,False,not a single-protein system without nucleic acids
+LLPS000466,p0024,False,not a single-protein system without nucleic acids
+LLPS000478,p0024;p0271,False,not a single-protein system without nucleic acids
+LLPS000476,p0024,False,not a single-protein system without nucleic acids
+LLPS000475,p0024,False,not a single-protein system without nucleic acids
+LLPS000473,p0024,False,not a single-protein system without nucleic acids
+LLPS001078,p0257,False,not a single-protein system without nucleic acids
+LLPS001077,p0257,False,not a single-protein system without nucleic acids
+LLPS001076,p0257,False,not a single-protein system without nucleic acids
+LLPS001075,p0257,False,not a single-protein system without nucleic acids
+LLPS001074,p0257,False,not a single-protein system without nucleic acids
+LLPS001072,p0257,False,not a single-protein system without nucleic acids
+LLPS001073,p0257,False,not a single-protein system without nucleic acids
+LLPS000443,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001080,p0258;p0259,False,not a single-protein system without nucleic acids
+LLPS000281,p0016,False,not a natural protein
+LLPS000303,p0016,False,not a single-protein system without nucleic acids
+LLPS000288,p0016,False,not a single-protein system without nucleic acids
+LLPS000309,p0016;p0270,False,not a single-protein system without nucleic acids
+LLPS000297,p0016,False,not a single-protein system without nucleic acids
+LLPS000295,p0016,False,not a single-protein system without nucleic acids
+LLPS000296,p0016,False,not a single-protein system without nucleic acids
+LLPS000283,p0016,False,not a single-protein system without nucleic acids
+LLPS000282,p0016,False,not a single-protein system without nucleic acids
+LLPS000536,p0038,False,tested construct does not overlap an annotated IDR
+LLPS000539,p0038,True,eligible IDR coverage
+LLPS000416,p0023,True,eligible IDR coverage
+LLPS000444,p0023,True,eligible IDR coverage
+LLPS000182,p0008;p0023,False,not a single-protein system without nucleic acids
+LLPS000183,p0008;p0023,False,not a single-protein system without nucleic acids
+LLPS000030,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000068,p0002,False,construct does not map uniquely and exactly to parent
+LLPS000858,p0152;p0260,False,not a single-protein system without nucleic acids
+LLPS000857,p0152;p0260,False,not a single-protein system without nucleic acids
+LLPS001082,p0260,False,no annotated parent IDR
+LLPS001083,p0260,False,not a single-protein system without nucleic acids
+LLPS001088,p0261,True,eligible IDR coverage
+LLPS001089,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001093,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001094,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001099,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001100,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001101,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001102,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001092,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001096,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001097,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001098,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001087,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001086,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001085,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001084,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001037,p0242,False,tested construct does not overlap an annotated IDR
+LLPS001038,p0242,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001091,p0261,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001104,p0262;p0263;p0189,False,not a single-protein system without nucleic acids
+LLPS001108,p0264,False,no annotated parent IDR
+LLPS000280,p0016,False,not a natural protein
+LLPS000447,p0023,False,not a single-protein system without nucleic acids
+LLPS000449,p0023,False,not a single-protein system without nucleic acids
+LLPS000451,p0023,False,not a single-protein system without nucleic acids
+LLPS000445,p0023,False,not a single-protein system without nucleic acids
+LLPS000423,p0023,True,eligible IDR coverage
+LLPS000448,p0023,False,not a single-protein system without nucleic acids
+LLPS000450,p0023,False,not a single-protein system without nucleic acids
+LLPS000452,p0023,False,not a single-protein system without nucleic acids
+LLPS000446,p0023,False,not a single-protein system without nucleic acids
+LLPS000401,p0022;p0266;p0267;p0238,False,not a single-protein system without nucleic acids
+LLPS000402,p0022;p0266;p0267;p0238;p0021;p0239,False,not a single-protein system without nucleic acids
+LLPS000398,p0022;p0021;p0239,False,not a single-protein system without nucleic acids
+LLPS000399,p0022;p0021;p0239;p0266,False,not a single-protein system without nucleic acids
+LLPS000400,p0022;p0021;p0239;p0266;p0267,False,not a single-protein system without nucleic acids
+LLPS001035,p0238;p0267,False,not a single-protein system without nucleic acids
+LLPS001111,p0266;p0238;p0267,False,not a single-protein system without nucleic acids
+LLPS001112,p0266;p0238;p0267;p0022,False,not a single-protein system without nucleic acids
+LLPS000405,p0022;p0266;p0267;p0238;p0021;p0239,False,not a single-protein system without nucleic acids
+LLPS000409,p0022;p0266;p0267;p0240;p0021;p0239,False,not a single-protein system without nucleic acids
+LLPS000411,p0022;p0266;p0267;p0241;p0021;p0239,False,not a single-protein system without nucleic acids
+LLPS000404,p0022;p0266;p0267;p0238;p0021;p0239,False,not a single-protein system without nucleic acids
+LLPS000403,p0022;p0266;p0267;p0238;p0021;p0239,False,not a single-protein system without nucleic acids
+LLPS000410,p0022;p0266;p0267;p0240;p0021;p0239;p0241,False,not a single-protein system without nucleic acids
+LLPS000406,p0022;p0266;p0267;p0238;p0021;p0239;p0242,False,not a single-protein system without nucleic acids
+LLPS000407,p0022;p0266;p0267;p0238;p0021;p0239;p0243,False,not a single-protein system without nucleic acids
+LLPS000408,p0022;p0266;p0267;p0238;p0021;p0239;p0245,False,not a single-protein system without nucleic acids
+LLPS000454,p0023;p0219,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000456,p0023;p0219,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000455,p0023;p0219,False,not a single-protein system without nucleic acids
+LLPS000457,p0023;p0219,False,not a single-protein system without nucleic acids
+LLPS000596,p0049,False,not a single-protein system without nucleic acids
+LLPS000608,p0049;p0145,False,not a single-protein system without nucleic acids
+LLPS000900,p0168;p0246,False,not a single-protein system without nucleic acids
+LLPS000901,p0168;p0246,False,not a single-protein system without nucleic acids
+LLPS000902,p0168;p0246,False,not a single-protein system without nucleic acids
+LLPS000899,p0168;p0246,False,not a single-protein system without nucleic acids
+LLPS000903,p0168;p0246;p0169,False,not a single-protein system without nucleic acids
+LLPS001057,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS001055,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS001062,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS001059,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS001060,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS001058,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS001053,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS001052,p0252,True,eligible IDR coverage
+LLPS001064,p0252;p0268;p0269,False,not a single-protein system without nucleic acids
+LLPS001067,p0252;p0268;p0269,False,not a single-protein system without nucleic acids
+LLPS001065,p0252;p0268;p0269,False,not a single-protein system without nucleic acids
+LLPS001066,p0252;p0268;p0269,False,not a single-protein system without nucleic acids
+LLPS001043,p0247,True,eligible IDR coverage
+LLPS001044,p0247;p0040,False,not a single-protein system without nucleic acids
+LLPS001046,p0248,False,not a single-protein system without nucleic acids
+LLPS001048,p0248,False,not a single-protein system without nucleic acids
+LLPS001045,p0248,False,not a single-protein system without nucleic acids
+LLPS001049,p0248;p0249,False,not a single-protein system without nucleic acids
+LLPS001051,p0248;p0250;p0251,False,not a single-protein system without nucleic acids
+LLPS000550,p0038,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000548,p0038,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000555,p0038,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000547,p0038,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000557,p0038,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000545,p0038,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000556,p0038,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000549,p0038,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000553,p0038,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000505,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000192,p0009;p0272,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000360,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000362,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000385,p0020;p0043;p0027,False,not a single-protein system without nucleic acids
+LLPS000349,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000350,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000353,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000354,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000355,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000357,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000359,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000326,p0020,False,not a single-protein system without nucleic acids
+LLPS000358,p0020;p0027,False,not a single-protein system without nucleic acids
+LLPS000917,p0171,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000914,p0171,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000915,p0171,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000916,p0171,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000913,p0171,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000910,p0171,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000911,p0171,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000912,p0171,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000516,p0032,False,not a single-protein system without nucleic acids
+LLPS000517,p0032,False,not a single-protein system without nucleic acids
+LLPS001116,p0274,False,no annotated parent IDR
+LLPS001117,p0275,False,no annotated parent IDR
+LLPS001118,p0276,True,eligible IDR coverage
+LLPS000066,p0002,True,eligible IDR coverage
+LLPS001119,p0276,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001120,p0276,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001121,p0276,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000275,p0014;p0045;p0046,False,not a single-protein system without nucleic acids
+LLPS000259,p0014;p0045,False,not a single-protein system without nucleic acids
+LLPS000166,p0008,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000169,p0008,False,IDR coordinates outside parent sequence: 342-357
+LLPS000170,p0008,False,IDR coordinates outside parent sequence: 342-357
+LLPS000171,p0008,False,IDR coordinates outside parent sequence: 342-357
+LLPS001122,p0277,False,no annotated parent IDR
+LLPS001123,p0278,False,no annotated parent IDR
+LLPS000928,p0173,False,not a natural protein
+LLPS001124,p0279,True,eligible IDR coverage
+LLPS001125,p0279,False,tested construct does not overlap an annotated IDR
+LLPS000924,p0173,False,not a natural protein
+LLPS000930,p0173,False,not a natural protein
+LLPS000932,p0173,False,not a natural protein
+LLPS000926,p0173,False,not a natural protein
+LLPS000925,p0173,False,not a natural protein
+LLPS000931,p0173,False,not a natural protein
+LLPS000929,p0173,False,not a natural protein
+LLPS000934,p0173,False,not a natural protein
+LLPS000927,p0173,False,not a natural protein
+LLPS000935,p0173,False,not a natural protein
+LLPS000933,p0173,False,not a natural protein
+LLPS001127,p0279;p0280,False,not a single-protein system without nucleic acids
+LLPS001126,p0279;p0280,False,not a single-protein system without nucleic acids
+LLPS001161,p0002;p0151;p0281,False,not a single-protein system without nucleic acids
+LLPS001158,p0002;p0281,False,not a single-protein system without nucleic acids
+LLPS001162,p0002;p0151;p0282,False,not a single-protein system without nucleic acids
+LLPS001159,p0002;p0282,False,not a single-protein system without nucleic acids
+LLPS001154,p0002;p0283;p0284,False,not a single-protein system without nucleic acids
+LLPS001155,p0002;p0283;p0284,False,not a single-protein system without nucleic acids
+LLPS001156,p0002;p0285,False,not a single-protein system without nucleic acids
+LLPS001157,p0002;p0285,False,not a single-protein system without nucleic acids
+LLPS001137,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001140,p0002;p0283;p0284;p0282,False,not a single-protein system without nucleic acids
+LLPS001138,p0002;p0283,False,not a single-protein system without nucleic acids
+LLPS001143,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001145,p0002;p0285;p0282,False,not a single-protein system without nucleic acids
+LLPS001141,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001142,p0002;p0286,False,not a single-protein system without nucleic acids
+LLPS001166,p0002,False,construct does not map uniquely and exactly to parent
+LLPS001167,p0002,False,construct does not map uniquely and exactly to parent
+LLPS001135,p0002,True,eligible IDR coverage
+LLPS001149,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001150,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001134,p0002,True,eligible IDR coverage
+LLPS001133,p0002,True,eligible IDR coverage
+LLPS001136,p0002;p0151;p0281,False,not a single-protein system without nucleic acids
+LLPS001186,p0002,False,not a single-protein system without nucleic acids
+LLPS001192,p0002,False,not a single-protein system without nucleic acids
+LLPS001189,p0002,False,not a single-protein system without nucleic acids
+LLPS001185,p0002,False,not a single-protein system without nucleic acids
+LLPS001191,p0002,False,not a single-protein system without nucleic acids
+LLPS001188,p0002,False,not a single-protein system without nucleic acids
+LLPS001184,p0002,False,not a single-protein system without nucleic acids
+LLPS001190,p0002,False,not a single-protein system without nucleic acids
+LLPS001187,p0002,False,not a single-protein system without nucleic acids
+LLPS001171,p0287,True,eligible IDR coverage
+LLPS001178,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS001180,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS001179,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS001175,p0032,False,not a single-protein system without nucleic acids
+LLPS001173,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS001081,p0259,False,no annotated parent IDR
+LLPS001152,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001153,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001165,p0002,True,eligible IDR coverage
+LLPS001148,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001147,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001170,p0288,False,not a natural protein
+LLPS001169,p0289,False,not a natural protein
+LLPS001182,p0290,False,not a single-protein system without nucleic acids
+LLPS001181,p0290,False,not a single-protein system without nucleic acids
+LLPS001128,p0291,False,no annotated parent IDR
+LLPS001129,p0292,False,no annotated parent IDR
+LLPS001130,p0293,False,no annotated parent IDR
+LLPS001132,p0294,False,no annotated parent IDR
+LLPS001168,p0295,False,no annotated parent IDR
+LLPS000696,p0109,True,eligible IDR coverage
+LLPS001225,p0109;p0166,False,not a single-protein system without nucleic acids
+LLPS001252,p0296,False,no annotated parent IDR
+LLPS001256,p0296,False,no annotated parent IDR
+LLPS001254,p0296;p0138,False,not a single-protein system without nucleic acids
+LLPS001255,p0296;p0138,False,not a single-protein system without nucleic acids
+LLPS001292,p0024,False,not a single-protein system without nucleic acids
+LLPS001291,p0298,False,not a single-protein system without nucleic acids
+LLPS001202,p0024;p0298,False,not a single-protein system without nucleic acids
+LLPS001201,p0024;p0298,False,not a single-protein system without nucleic acids
+LLPS001204,p0024;p0298,False,not a single-protein system without nucleic acids
+LLPS001295,p0024;p0298,False,not a single-protein system without nucleic acids
+LLPS001294,p0024;p0298,False,not a single-protein system without nucleic acids
+LLPS001264,p0024;p0298;p0299,False,not a single-protein system without nucleic acids
+LLPS001297,p0024;p0298,False,not a single-protein system without nucleic acids
+LLPS001293,p0024;p0298,False,not a single-protein system without nucleic acids
+LLPS001265,p0024;p0298;p0297,False,not a single-protein system without nucleic acids
+LLPS001266,p0024;p0298,False,not a single-protein system without nucleic acids
+LLPS001268,p0024;p0298,False,not a single-protein system without nucleic acids
+LLPS001267,p0024;p0298,False,not a single-protein system without nucleic acids
+LLPS001262,p0024,False,not a single-protein system without nucleic acids
+LLPS001257,p0298,False,not a single-protein system without nucleic acids
+LLPS001205,p0024;p0298;p0299,False,not a single-protein system without nucleic acids
+LLPS001207,p0024;p0298;p0299,False,not a single-protein system without nucleic acids
+LLPS001206,p0024;p0298;p0299,False,not a single-protein system without nucleic acids
+LLPS001209,p0024;p0299,False,not a single-protein system without nucleic acids
+LLPS001196,p0298;p0299,False,not a single-protein system without nucleic acids
+LLPS001270,p0024;p0298;p0299,False,not a single-protein system without nucleic acids
+LLPS001271,p0024;p0298;p0299,False,not a single-protein system without nucleic acids
+LLPS001273,p0024;p0299,False,not a single-protein system without nucleic acids
+LLPS001259,p0298;p0299,False,not a single-protein system without nucleic acids
+LLPS001229,p0300,True,eligible IDR coverage
+LLPS001230,p0300,True,eligible IDR coverage
+LLPS001232,p0300,True,eligible IDR coverage
+LLPS001231,p0300,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001275,p0300,False,not a single-protein system without nucleic acids
+LLPS001276,p0300,False,not a single-protein system without nucleic acids
+LLPS001237,p0301,True,eligible IDR coverage
+LLPS001243,p0302,True,eligible IDR coverage
+LLPS001249,p0303,True,eligible IDR coverage
+LLPS001238,p0301,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001244,p0302,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001250,p0303,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001236,p0301,False,tested construct does not overlap an annotated IDR
+LLPS001242,p0302,False,tested construct does not overlap an annotated IDR
+LLPS001248,p0303,False,tested construct does not overlap an annotated IDR
+LLPS001211,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001212,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001213,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001280,p0031,False,not a single-protein system without nucleic acids
+LLPS001301,p0031,False,not a single-protein system without nucleic acids
+LLPS001300,p0031,False,not a single-protein system without nucleic acids
+LLPS001298,p0031,False,not a single-protein system without nucleic acids
+LLPS001282,p0031,False,not a single-protein system without nucleic acids
+LLPS001279,p0031,False,not a single-protein system without nucleic acids
+LLPS001286,p0031,False,not a single-protein system without nucleic acids
+LLPS001287,p0032,False,not a single-protein system without nucleic acids
+LLPS001289,p0032,False,not a single-protein system without nucleic acids
+LLPS001290,p0032,False,not a single-protein system without nucleic acids
+LLPS001302,p0032,False,not a single-protein system without nucleic acids
+LLPS001283,p0031,False,not a single-protein system without nucleic acids
+LLPS001285,p0031,False,not a single-protein system without nucleic acids
+LLPS001218,p0306;p0304;p0305,False,not a single-protein system without nucleic acids
+LLPS001219,p0306;p0304;p0305,False,not a single-protein system without nucleic acids
+LLPS001222,p0306;p0304;p0305,False,not a single-protein system without nucleic acids
+LLPS001220,p0306;p0304;p0305,False,not a single-protein system without nucleic acids
+LLPS001215,p0306;p0304;p0305,False,not a single-protein system without nucleic acids
+LLPS001216,p0306;p0304;p0305,False,not a single-protein system without nucleic acids
+LLPS001217,p0306;p0304;p0305,False,not a single-protein system without nucleic acids
+LLPS001224,p0306;p0304;p0305,False,not a single-protein system without nucleic acids
+LLPS001221,p0306;p0304;p0305;p0307,False,not a single-protein system without nucleic acids
+LLPS001309,p0298,False,no annotated parent IDR
+LLPS001311,p0298,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001312,p0298,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001314,p0298,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001317,p0011,True,eligible IDR coverage
+LLPS001339,p0308,True,eligible IDR coverage
+LLPS001338,p0308,True,eligible IDR coverage
+LLPS001334,p0308,False,tested construct does not overlap an annotated IDR
+LLPS001335,p0308,False,tested construct does not overlap an annotated IDR
+LLPS001337,p0308,False,tested construct does not overlap an annotated IDR
+LLPS001327,p0002,True,eligible IDR coverage
+LLPS001329,p0002;p0002,False,not a single-protein system without nucleic acids
+LLPS001330,p0002;p0002,False,not a single-protein system without nucleic acids
+LLPS001328,p0002;p0002,False,not a single-protein system without nucleic acids
+LLPS001331,p0002;p0002,False,not a single-protein system without nucleic acids
+LLPS001332,p0002;p0002,False,not a single-protein system without nucleic acids
+LLPS001362,p0309,False,no annotated parent IDR
+LLPS001361,p0309,False,no annotated parent IDR
+LLPS001347,p0310,True,eligible IDR coverage
+LLPS001343,p0020;p0311,False,not a single-protein system without nucleic acids
+LLPS001426,p0171,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001303,p0313;p0312,False,not a single-protein system without nucleic acids
+LLPS001356,p0312,False,no annotated parent IDR
+LLPS001308,p0314,False,no annotated parent IDR
+LLPS001333,p0315,False,no annotated parent IDR
+LLPS001340,p0316,True,eligible IDR coverage
+LLPS001348,p0318,False,no annotated parent IDR
+LLPS001322,p0317;p0318,False,not a single-protein system without nucleic acids
+LLPS001416,p0002,False,not a single-protein system without nucleic acids
+LLPS001418,p0002,False,not a single-protein system without nucleic acids
+LLPS001421,p0002,False,not a single-protein system without nucleic acids
+LLPS001422,p0002,False,not a single-protein system without nucleic acids
+LLPS001423,p0002,False,not a single-protein system without nucleic acids
+LLPS001414,p0002,False,not a single-protein system without nucleic acids
+LLPS001417,p0002,False,not a single-protein system without nucleic acids
+LLPS001419,p0002,False,not a single-protein system without nucleic acids
+LLPS001420,p0002,False,not a single-protein system without nucleic acids
+LLPS001425,p0002;p0151,False,not a single-protein system without nucleic acids
+LLPS001415,p0002,False,not a single-protein system without nucleic acids
+LLPS001424,p0002;p0151,False,not a single-protein system without nucleic acids
+LLPS000676,p0103,True,eligible IDR coverage
+LLPS001326,p0103,True,eligible IDR coverage
+LLPS001324,p0103,False,construct does not map uniquely and exactly to parent
+LLPS001325,p0103,False,construct does not map uniquely and exactly to parent
+LLPS001409,p0103,False,not a single-protein system without nucleic acids
+LLPS001358,p0023,True,eligible IDR coverage
+LLPS001351,p0321,False,no annotated parent IDR
+LLPS001352,p0321,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001353,p0321,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001354,p0321,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001350,p0321,False,no annotated parent IDR
+LLPS001363,p0322,False,no annotated parent IDR
+LLPS001306,p0323,True,eligible IDR coverage
+LLPS001305,p0323,True,eligible IDR coverage
+LLPS001307,p0323,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001387,p0324,False,not a single-protein system without nucleic acids
+LLPS001320,p0324,False,no annotated parent IDR
+LLPS001377,p0324,False,not a single-protein system without nucleic acids
+LLPS001407,p0324,False,not a single-protein system without nucleic acids
+LLPS001365,p0324,False,not a single-protein system without nucleic acids
+LLPS001374,p0324,False,not a single-protein system without nucleic acids
+LLPS001380,p0324,False,not a single-protein system without nucleic acids
+LLPS001404,p0324,False,not a single-protein system without nucleic acids
+LLPS001385,p0324,False,not a single-protein system without nucleic acids
+LLPS001390,p0326,False,not a single-protein system without nucleic acids
+LLPS001398,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001366,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001375,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001381,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001405,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001369,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001372,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001378,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001408,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001400,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001383,p0327,False,not a single-protein system without nucleic acids
+LLPS001364,p0327,False,not a single-protein system without nucleic acids
+LLPS001373,p0327,False,not a single-protein system without nucleic acids
+LLPS001379,p0327,False,not a single-protein system without nucleic acids
+LLPS001403,p0327,False,not a single-protein system without nucleic acids
+LLPS001367,p0327,False,not a single-protein system without nucleic acids
+LLPS001370,p0327,False,not a single-protein system without nucleic acids
+LLPS001376,p0327,False,not a single-protein system without nucleic acids
+LLPS001406,p0327,False,not a single-protein system without nucleic acids
+LLPS001389,p0324;p0328;p0329;p0330;p0331;p0332;p0333;p0327,False,not a single-protein system without nucleic acids
+LLPS001392,p0340;p0341;p0342;p0343;p0344;p0345;p0324,False,not a single-protein system without nucleic acids
+LLPS001395,p0340;p0341;p0342;p0343;p0344;p0345;p0324;p0328;p0329;p0330;p0331;p0332;p0333;p0327,False,not a single-protein system without nucleic acids
+LLPS001399,p0328;p0329;p0330;p0331;p0332;p0333,False,not a single-protein system without nucleic acids
+LLPS001384,p0327,False,not a single-protein system without nucleic acids
+LLPS001388,p0324,False,not a single-protein system without nucleic acids
+LLPS001505,p0168,False,not a single-protein system without nucleic acids
+LLPS001449,p0364,False,no annotated parent IDR
+LLPS001443,p0363,True,eligible IDR coverage
+LLPS001444,p0363,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001441,p0363,False,tested construct does not overlap an annotated IDR
+LLPS001445,p0363;p0032,False,not a single-protein system without nucleic acids
+LLPS001442,p0363;p0032,False,not a single-protein system without nucleic acids
+LLPS001440,p0363;p0032,False,not a single-protein system without nucleic acids
+LLPS001513,p0031,False,not a single-protein system without nucleic acids
+LLPS001508,p0026,False,not a single-protein system without nucleic acids
+LLPS001515,p0031;p0026,False,not a single-protein system without nucleic acids
+LLPS001509,p0026,False,not a single-protein system without nucleic acids
+LLPS001514,p0031;p0354,False,not a single-protein system without nucleic acids
+LLPS001506,p0354,False,not a single-protein system without nucleic acids
+LLPS001516,p0031;p0355,False,not a single-protein system without nucleic acids
+LLPS001510,p0355,False,not a single-protein system without nucleic acids
+LLPS001517,p0031;p0219,False,not a single-protein system without nucleic acids
+LLPS001512,p0219,False,not a single-protein system without nucleic acids
+LLPS001511,p0356,False,not a single-protein system without nucleic acids
+LLPS001518,p0357,False,not a single-protein system without nucleic acids
+LLPS001458,p0031,False,not a natural protein
+LLPS001507,p0002,False,not a single-protein system without nucleic acids
+LLPS001520,p0002,False,not a single-protein system without nucleic acids
+LLPS001477,p0369,True,eligible IDR coverage
+LLPS001461,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001460,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001452,p0359,True,eligible IDR coverage
+LLPS001453,p0359,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001462,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001463,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001464,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001465,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001466,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001467,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001468,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001469,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001470,p0358,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001475,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS001454,p0360,False,no annotated parent IDR
+LLPS001446,p0361,False,no annotated parent IDR
+LLPS001519,p0360,False,not a single-protein system without nucleic acids
+LLPS001485,p0360,False,not a single-protein system without nucleic acids
+LLPS001430,p0370;p0372,False,not a single-protein system without nucleic acids
+LLPS001489,p0362,False,not a single-protein system without nucleic acids
+LLPS001488,p0362,False,not a single-protein system without nucleic acids
+LLPS001487,p0362,False,not a single-protein system without nucleic acids
+LLPS001437,p0366,True,eligible IDR coverage
+LLPS001434,p0365,True,eligible IDR coverage
+LLPS001438,p0367,True,eligible IDR coverage
+LLPS001481,p0366,False,not a single-protein system without nucleic acids
+LLPS001479,p0365;p0366;p0367,False,not a single-protein system without nucleic acids
+LLPS001435,p0365;p0366;p0367,False,not a single-protein system without nucleic acids
+LLPS001427,p0368,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001486,p0368,False,not a single-protein system without nucleic acids
+LLPS001473,p0348,True,eligible IDR coverage
+LLPS001474,p0348,False,construct does not map uniquely and exactly to parent
+LLPS001471,p0348,False,construct does not map uniquely and exactly to parent
+LLPS001492,p0130,False,not a single-protein system without nucleic acids
+LLPS001491,p0130,False,not a single-protein system without nucleic acids
+LLPS001493,p0130,False,not a single-protein system without nucleic acids
+LLPS001494,p0130,False,not a single-protein system without nucleic acids
+LLPS001495,p0130,False,not a single-protein system without nucleic acids
+LLPS001497,p0130,False,not a single-protein system without nucleic acids
+LLPS001498,p0130,False,not a single-protein system without nucleic acids
+LLPS001499,p0130,False,not a single-protein system without nucleic acids
+LLPS001500,p0130,False,not a single-protein system without nucleic acids
+LLPS001503,p0131,False,not a single-protein system without nucleic acids
+LLPS001502,p0131;p0130,False,not a single-protein system without nucleic acids
+LLPS001501,p0131;p0130,False,not a single-protein system without nucleic acids
+LLPS001451,p0347,True,eligible IDR coverage
+LLPS001482,p0347,False,not a single-protein system without nucleic acids
+LLPS001484,p0347,False,not a single-protein system without nucleic acids
+LLPS001483,p0347,False,not a single-protein system without nucleic acids
+LLPS002050,p0559;p0560;p0561,False,not a single-protein system without nucleic acids
+LLPS002049,p0559,False,no annotated parent IDR
+LLPS001643,p0560,False,no annotated parent IDR
+LLPS002028,p0559,False,no annotated parent IDR
+LLPS001639,p0560,False,no annotated parent IDR
+LLPS001641,p0560,False,no annotated parent IDR
+LLPS001683,p0002,True,eligible IDR coverage
+LLPS002038,p0559,False,no annotated parent IDR
+LLPS002032,p0559,False,no annotated parent IDR
+LLPS002045,p0559,False,no annotated parent IDR
+LLPS002033,p0559,False,no annotated parent IDR
+LLPS002031,p0559,False,no annotated parent IDR
+LLPS002034,p0559,False,no annotated parent IDR
+LLPS002042,p0559,False,no annotated parent IDR
+LLPS002047,p0559,False,no annotated parent IDR
+LLPS002048,p0559,False,no annotated parent IDR
+LLPS002037,p0559,False,no annotated parent IDR
+LLPS002036,p0559,False,no annotated parent IDR
+LLPS002035,p0559,False,no annotated parent IDR
+LLPS002041,p0559,False,no annotated parent IDR
+LLPS002030,p0559,False,no annotated parent IDR
+LLPS002029,p0559,False,no annotated parent IDR
+LLPS002046,p0559,False,no annotated parent IDR
+LLPS002039,p0559,False,no annotated parent IDR
+LLPS002040,p0559,False,no annotated parent IDR
+LLPS002043,p0559,False,no annotated parent IDR
+LLPS002044,p0559,False,no annotated parent IDR
+LLPS001640,p0560,False,no annotated parent IDR
+LLPS001642,p0560,False,no annotated parent IDR
+LLPS001636,p0560,False,no annotated parent IDR
+LLPS001638,p0560,False,no annotated parent IDR
+LLPS001637,p0560,False,no annotated parent IDR
+LLPS002053,p0559;p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002054,p0559;p0117,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002052,p0559;p0560,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002051,p0559;p0560,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001817,p0452,False,not a natural protein
+LLPS001814,p0452,False,not a natural protein
+LLPS001821,p0452,False,not a natural protein
+LLPS001815,p0452,False,not a natural protein
+LLPS001820,p0452,False,not a natural protein
+LLPS001819,p0452,False,not a natural protein
+LLPS001812,p0452,False,not a natural protein
+LLPS001818,p0452,False,not a natural protein
+LLPS001816,p0452,False,not a single-protein system without nucleic acids
+LLPS002111,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002112,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002113,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002114,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002119,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002115,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002116,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002117,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002118,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001612,p0011,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002327,p0216,False,not a single-protein system without nucleic acids
+LLPS002006,p0547;p0002;p0549;p0551,False,not a single-protein system without nucleic acids
+LLPS002008,p0547;p0002;p0549;p0001;p0551,False,not a single-protein system without nucleic acids
+LLPS002004,p0547;p0002;p0549;p0011;p0551,False,not a single-protein system without nucleic acids
+LLPS002009,p0547;p0002;p0549;p0007;p0551,False,not a single-protein system without nucleic acids
+LLPS002023,p0547;p0548;p0549;p0002;p0551,False,not a single-protein system without nucleic acids
+LLPS002024,p0547;p0548;p0549;p0001;p0551,False,not a single-protein system without nucleic acids
+LLPS002021,p0547;p0548;p0549;p0011;p0551,False,not a single-protein system without nucleic acids
+LLPS002026,p0547;p0548;p0549;p0007;p0551,False,not a single-protein system without nucleic acids
+LLPS002019,p0547;p0001;p0549;p0551,False,not a single-protein system without nucleic acids
+LLPS002015,p0547;p0001;p0549;p0011;p0551,False,not a single-protein system without nucleic acids
+LLPS002017,p0547;p0001;p0549;p0002;p0551,False,not a single-protein system without nucleic acids
+LLPS002005,p0547;p0002;p0549;p0011;p0551,False,not a single-protein system without nucleic acids
+LLPS002022,p0547;p0548;p0549;p0011;p0551,False,not a single-protein system without nucleic acids
+LLPS002016,p0547;p0001;p0549;p0011;p0551,False,not a single-protein system without nucleic acids
+LLPS002432,p0547;p0001,False,not a single-protein system without nucleic acids
+LLPS002461,p0547;p0001,False,not a single-protein system without nucleic acids
+LLPS002285,p0547;p0001,False,not a single-protein system without nucleic acids
+LLPS002462,p0547;p0002;p0001;p0551,False,not a single-protein system without nucleic acids
+LLPS002464,p0547;p0548;p0001;p0551,False,not a single-protein system without nucleic acids
+LLPS002025,p0547;p0548;p0549;p0551,False,not a single-protein system without nucleic acids
+LLPS002463,p0547;p0002;p0548;p0551,False,not a single-protein system without nucleic acids
+LLPS001689,p0002;p0551,False,not a single-protein system without nucleic acids
+LLPS002020,p0547;p0001;p0551,False,not a single-protein system without nucleic acids
+LLPS002010,p0547;p0002;p0551,False,not a single-protein system without nucleic acids
+LLPS002027,p0547;p0548;p0551,False,not a single-protein system without nucleic acids
+LLPS002018,p0547;p0001;p0549,False,not a single-protein system without nucleic acids
+LLPS002007,p0547;p0002;p0549;p0001,False,not a single-protein system without nucleic acids
+LLPS001893,p0412,True,eligible IDR coverage
+LLPS002310,p0412,False,not a single-protein system without nucleic acids
+LLPS002296,p0412,False,not a single-protein system without nucleic acids
+LLPS002307,p0412,False,not a single-protein system without nucleic acids
+LLPS002304,p0412,False,not a single-protein system without nucleic acids
+LLPS002301,p0412,False,not a single-protein system without nucleic acids
+LLPS002295,p0412,False,not a single-protein system without nucleic acids
+LLPS002299,p0412,False,not a single-protein system without nucleic acids
+LLPS002300,p0412,False,not a single-protein system without nucleic acids
+LLPS002305,p0412,False,not a single-protein system without nucleic acids
+LLPS002306,p0412,False,not a single-protein system without nucleic acids
+LLPS002303,p0412,False,not a single-protein system without nucleic acids
+LLPS002302,p0412,False,not a single-protein system without nucleic acids
+LLPS002298,p0412,False,not a single-protein system without nucleic acids
+LLPS002347,p0412,False,not a single-protein system without nucleic acids
+LLPS002297,p0412,False,not a single-protein system without nucleic acids
+LLPS002308,p0412,False,not a single-protein system without nucleic acids
+LLPS001659,p0187;p0438,False,not a single-protein system without nucleic acids
+LLPS001660,p0187;p0438,False,not a single-protein system without nucleic acids
+LLPS001661,p0187;p0438,False,not a single-protein system without nucleic acids
+LLPS001662,p0187;p0438,False,not a single-protein system without nucleic acids
+LLPS001663,p0187;p0438,False,not a single-protein system without nucleic acids
+LLPS001664,p0187;p0438,False,not a single-protein system without nucleic acids
+LLPS001555,p0354,True,eligible IDR coverage
+LLPS002180,p0444,True,eligible IDR coverage
+LLPS001606,p0445,True,eligible IDR coverage
+LLPS001734,p0459,True,eligible IDR coverage
+LLPS001737,p0459;p0461,False,not a single-protein system without nucleic acids
+LLPS001739,p0459;p0461,False,not a single-protein system without nucleic acids
+LLPS001742,p0459;p0461;p0462,False,not a single-protein system without nucleic acids
+LLPS001741,p0459;p0461;p0462,False,not a single-protein system without nucleic acids
+LLPS002614,p0596,False,no annotated parent IDR
+LLPS002580,p0440,False,no annotated parent IDR
+LLPS002579,p0440,False,no annotated parent IDR
+LLPS002622,p0596;p0441,False,not a single-protein system without nucleic acids
+LLPS002626,p0596;p0442,False,not a single-protein system without nucleic acids
+LLPS002616,p0596;p0440,False,not a single-protein system without nucleic acids
+LLPS002581,p0440;p0596,False,not a single-protein system without nucleic acids
+LLPS002582,p0440;p0441,False,not a single-protein system without nucleic acids
+LLPS002583,p0440;p0442,False,not a single-protein system without nucleic acids
+LLPS002620,p0596;p0443,False,not a single-protein system without nucleic acids
+LLPS002828,p0596,False,not a single-protein system without nucleic acids
+LLPS002880,p0596,False,not a single-protein system without nucleic acids
+LLPS002618,p0596,False,not a single-protein system without nucleic acids
+LLPS002617,p0596,False,not a single-protein system without nucleic acids
+LLPS002619,p0596,False,not a single-protein system without nucleic acids
+LLPS002621,p0596;p0441,False,not a single-protein system without nucleic acids
+LLPS002624,p0596;p0442,False,not a single-protein system without nucleic acids
+LLPS002623,p0596;p0442,False,not a single-protein system without nucleic acids
+LLPS002625,p0596;p0442,False,not a single-protein system without nucleic acids
+LLPS002615,p0596;p0440,False,not a single-protein system without nucleic acids
+LLPS001882,p0437;p0438,False,not a single-protein system without nucleic acids
+LLPS002549,p0446,False,not a single-protein system without nucleic acids
+LLPS002551,p0447,False,not a single-protein system without nucleic acids
+LLPS002550,p0448,False,not a single-protein system without nucleic acids
+LLPS002565,p0446,False,not a single-protein system without nucleic acids
+LLPS002566,p0447,False,not a single-protein system without nucleic acids
+LLPS002563,p0450,False,not a single-protein system without nucleic acids
+LLPS002561,p0449,False,not a single-protein system without nucleic acids
+LLPS002562,p0451,False,not a single-protein system without nucleic acids
+LLPS002417,p0449,False,not a single-protein system without nucleic acids
+LLPS002419,p0450,False,not a single-protein system without nucleic acids
+LLPS002418,p0451,False,not a single-protein system without nucleic acids
+LLPS002424,p0449,False,not a single-protein system without nucleic acids
+LLPS002426,p0450,False,not a single-protein system without nucleic acids
+LLPS002425,p0451,False,not a single-protein system without nucleic acids
+LLPS002421,p0446,False,not a single-protein system without nucleic acids
+LLPS002423,p0447,False,not a single-protein system without nucleic acids
+LLPS002422,p0448,False,not a single-protein system without nucleic acids
+LLPS002428,p0446,False,not a single-protein system without nucleic acids
+LLPS002430,p0447,False,not a single-protein system without nucleic acids
+LLPS002429,p0448,False,not a single-protein system without nucleic acids
+LLPS002564,p0450;p0447,False,not a single-protein system without nucleic acids
+LLPS002420,p0450;p0447,False,not a single-protein system without nucleic acids
+LLPS002427,p0450;p0447,False,not a single-protein system without nucleic acids
+LLPS001878,p0485,False,no annotated parent IDR
+LLPS001728,p0484,True,eligible IDR coverage
+LLPS001732,p0484,True,eligible IDR coverage
+LLPS002058,p0480,False,no annotated parent IDR
+LLPS001542,p0483,True,eligible IDR coverage
+LLPS001596,p0128,False,tested construct does not overlap an annotated IDR
+LLPS002060,p0480;p0481,False,not a single-protein system without nucleic acids
+LLPS002059,p0480;p0482,False,not a single-protein system without nucleic acids
+LLPS002061,p0480;p0481;p0482,False,not a single-protein system without nucleic acids
+LLPS002128,p0477,False,no annotated parent IDR
+LLPS002125,p0477,False,no annotated parent IDR
+LLPS002124,p0477,False,no annotated parent IDR
+LLPS002122,p0479,False,no annotated parent IDR
+LLPS002131,p0477;p0478,False,not a single-protein system without nucleic acids
+LLPS002129,p0477;p0478,False,not a single-protein system without nucleic acids
+LLPS002130,p0477;p0478,False,not a single-protein system without nucleic acids
+LLPS002123,p0479;p0478,False,not a single-protein system without nucleic acids
+LLPS001891,p0412,True,eligible IDR coverage
+LLPS001889,p0412,True,eligible IDR coverage
+LLPS001883,p0412,True,eligible IDR coverage
+LLPS001885,p0412,False,construct does not map uniquely and exactly to parent
+LLPS001892,p0412,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001890,p0412,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001884,p0412,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002251,p0412,False,not a single-protein system without nucleic acids
+LLPS002543,p0412,False,not a single-protein system without nucleic acids
+LLPS002431,p0412,False,not a single-protein system without nucleic acids
+LLPS002249,p0412,False,not a single-protein system without nucleic acids
+LLPS002542,p0412,False,not a single-protein system without nucleic acids
+LLPS002247,p0412,False,not a single-protein system without nucleic acids
+LLPS002541,p0412,False,not a single-protein system without nucleic acids
+LLPS002244,p0412,False,not a single-protein system without nucleic acids
+LLPS002540,p0412,False,not a single-protein system without nucleic acids
+LLPS002246,p0412,False,not a single-protein system without nucleic acids
+LLPS002252,p0412,False,not a single-protein system without nucleic acids
+LLPS002250,p0412,False,not a single-protein system without nucleic acids
+LLPS002248,p0412,False,not a single-protein system without nucleic acids
+LLPS002245,p0412,False,not a single-protein system without nucleic acids
+LLPS002253,p0412;p0475,False,not a single-protein system without nucleic acids
+LLPS002243,p0412;p0476,False,not a single-protein system without nucleic acids
+LLPS002242,p0412;p0475;p0476,False,not a single-protein system without nucleic acids
+LLPS002107,p0023;p0489,False,not a single-protein system without nucleic acids
+LLPS002105,p0023;p0488,False,not a single-protein system without nucleic acids
+LLPS002106,p0023;p0488,False,not a single-protein system without nucleic acids
+LLPS002108,p0023;p0489,False,not a single-protein system without nucleic acids
+LLPS002109,p0023;p0489,False,not a single-protein system without nucleic acids
+LLPS002433,p0023,False,not a single-protein system without nucleic acids
+LLPS002434,p0023;p0489,False,not a single-protein system without nucleic acids
+LLPS002110,p0023,True,eligible IDR coverage
+LLPS001701,p0002,True,eligible IDR coverage
+LLPS001614,p0453,False,no annotated parent IDR
+LLPS002364,p0023,False,not a single-protein system without nucleic acids
+LLPS001599,p0474,True,eligible IDR coverage
+LLPS001598,p0474,True,eligible IDR coverage
+LLPS001966,p0385;p0385,False,not a single-protein system without nucleic acids
+LLPS001978,p0385;p0385,False,not a single-protein system without nucleic acids
+LLPS002290,p0385,False,not a single-protein system without nucleic acids
+LLPS002289,p0385,False,not a single-protein system without nucleic acids
+LLPS001964,p0385;p0009,False,not a single-protein system without nucleic acids
+LLPS002466,p0385,False,not a single-protein system without nucleic acids
+LLPS001977,p0385;p0385,False,not a single-protein system without nucleic acids
+LLPS001974,p0385;p0386,False,not a single-protein system without nucleic acids
+LLPS001975,p0385;p0386,False,not a single-protein system without nucleic acids
+LLPS001976,p0385;p0386,False,not a single-protein system without nucleic acids
+LLPS001961,p0385;p0386,False,not a single-protein system without nucleic acids
+LLPS001962,p0385;p0386,False,not a single-protein system without nucleic acids
+LLPS001963,p0385;p0386,False,not a single-protein system without nucleic acids
+LLPS002398,p0385,False,not a single-protein system without nucleic acids
+LLPS002288,p0385,False,not a single-protein system without nucleic acids
+LLPS002257,p0385,False,not a single-protein system without nucleic acids
+LLPS002291,p0385;p0385,False,not a single-protein system without nucleic acids
+LLPS001969,p0385,True,eligible IDR coverage
+LLPS001965,p0385,True,eligible IDR coverage
+LLPS000191,p0009,False,no annotated parent IDR
+LLPS002414,p0001;p0527,False,not a single-protein system without nucleic acids
+LLPS001787,p0001;p0527,False,not a single-protein system without nucleic acids
+LLPS002413,p0001,False,not a single-protein system without nucleic acids
+LLPS001601,p0535,False,no annotated parent IDR
+LLPS001602,p0535,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001603,p0535,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001600,p0535,False,no annotated parent IDR
+LLPS002264,p0535,False,not a single-protein system without nucleic acids
+LLPS002567,p0535,False,not a single-protein system without nucleic acids
+LLPS002055,p0436,False,no annotated parent IDR
+LLPS001952,p0434,True,eligible IDR coverage
+LLPS001954,p0434;p0435,False,not a single-protein system without nucleic acids
+LLPS001956,p0434;p0435,False,not a single-protein system without nucleic acids
+LLPS001953,p0434;p0435,False,not a single-protein system without nucleic acids
+LLPS001957,p0434;p0435,False,not a single-protein system without nucleic acids
+LLPS001955,p0434;p0435,False,not a single-protein system without nucleic acids
+LLPS001932,p0525,True,eligible IDR coverage
+LLPS001931,p0525,True,eligible IDR coverage
+LLPS001929,p0526,True,eligible IDR coverage
+LLPS002097,p0023,True,eligible IDR coverage
+LLPS002468,p0023,False,not a single-protein system without nucleic acids
+LLPS001581,p0128,True,eligible IDR coverage
+LLPS001587,p0128,True,eligible IDR coverage
+LLPS001591,p0128,True,eligible IDR coverage
+LLPS001592,p0128,False,tested construct does not overlap an annotated IDR
+LLPS001594,p0128,False,tested construct does not overlap an annotated IDR
+LLPS001593,p0128,False,tested construct does not overlap an annotated IDR
+LLPS001584,p0128,True,eligible IDR coverage
+LLPS001585,p0128,True,eligible IDR coverage
+LLPS001586,p0128,True,eligible IDR coverage
+LLPS001583,p0128,True,eligible IDR coverage
+LLPS002202,p0128,False,not a single-protein system without nucleic acids
+LLPS002319,p0128,False,not a single-protein system without nucleic acids
+LLPS002449,p0128,False,not a single-protein system without nucleic acids
+LLPS002236,p0128,False,not a single-protein system without nucleic acids
+LLPS002238,p0128,False,not a single-protein system without nucleic acids
+LLPS002239,p0128,False,not a single-protein system without nucleic acids
+LLPS002241,p0128,False,not a single-protein system without nucleic acids
+LLPS002240,p0128,False,not a single-protein system without nucleic acids
+LLPS002233,p0128,False,not a single-protein system without nucleic acids
+LLPS002234,p0128,False,not a single-protein system without nucleic acids
+LLPS002235,p0128,False,not a single-protein system without nucleic acids
+LLPS002237,p0128,False,not a single-protein system without nucleic acids
+LLPS002232,p0128,False,not a single-protein system without nucleic acids
+LLPS002211,p0128,False,not a single-protein system without nucleic acids
+LLPS002213,p0128,False,not a single-protein system without nucleic acids
+LLPS002215,p0128,False,not a single-protein system without nucleic acids
+LLPS002216,p0128,False,not a single-protein system without nucleic acids
+LLPS002204,p0128,False,not a single-protein system without nucleic acids
+LLPS001926,p0022;p0021,False,not a single-protein system without nucleic acids
+LLPS002146,p0515,True,eligible IDR coverage
+LLPS002149,p0515;p0516;p0520;p0519,False,not a single-protein system without nucleic acids
+LLPS002148,p0515;p0516,False,not a single-protein system without nucleic acids
+LLPS002147,p0515;p0376,False,not a single-protein system without nucleic acids
+LLPS002141,p0515;p0516,False,not a single-protein system without nucleic acids
+LLPS002144,p0515;p0516,False,not a single-protein system without nucleic acids
+LLPS002137,p0515;p0516,False,not a single-protein system without nucleic acids
+LLPS002139,p0515;p0516,False,not a single-protein system without nucleic acids
+LLPS002140,p0515;p0376,False,not a single-protein system without nucleic acids
+LLPS002142,p0515;p0376,False,not a single-protein system without nucleic acids
+LLPS002136,p0515;p0376,False,not a single-protein system without nucleic acids
+LLPS001703,p0002;p0515;p0516,False,not a single-protein system without nucleic acids
+LLPS002171,p0517;p0515;p0516,False,not a single-protein system without nucleic acids
+LLPS001605,p0138;p0515;p0516,False,not a single-protein system without nucleic acids
+LLPS002057,p0518;p0515;p0516,False,not a single-protein system without nucleic acids
+LLPS001702,p0002;p0515;p0376,False,not a single-protein system without nucleic acids
+LLPS001604,p0138;p0515;p0376,False,not a single-protein system without nucleic acids
+LLPS002056,p0518;p0515;p0376,False,not a single-protein system without nucleic acids
+LLPS002145,p0515;p0516,False,not a single-protein system without nucleic acids
+LLPS002143,p0515;p0376,False,not a single-protein system without nucleic acids
+LLPS002085,p0430,True,eligible IDR coverage
+LLPS002079,p0430,False,tested construct does not overlap an annotated IDR
+LLPS002081,p0430,False,construct does not map uniquely and exactly to parent
+LLPS002086,p0430,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002175,p0432,True,eligible IDR coverage
+LLPS002083,p0430;p0432,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002173,p0432;p0430,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002174,p0432;p0430,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002172,p0432;p0430,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002323,p0567,False,not a single-protein system without nucleic acids
+LLPS002321,p0567,False,not a single-protein system without nucleic acids
+LLPS002322,p0567,False,not a single-protein system without nucleic acids
+LLPS002121,p0431;p0430,False,not a single-protein system without nucleic acids
+LLPS001579,p0567,True,eligible IDR coverage
+LLPS001622,p0428,True,eligible IDR coverage
+LLPS001625,p0429,True,eligible IDR coverage
+LLPS001623,p0428,True,eligible IDR coverage
+LLPS001626,p0429,True,eligible IDR coverage
+LLPS001628,p0429,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001629,p0429,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001803,p0522,False,no annotated parent IDR
+LLPS001794,p0522,False,no annotated parent IDR
+LLPS001798,p0522,False,no annotated parent IDR
+LLPS001802,p0522,False,no annotated parent IDR
+LLPS001797,p0522,False,no annotated parent IDR
+LLPS001799,p0522,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001800,p0522,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001804,p0522,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001806,p0522,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001935,p0523,False,no annotated parent IDR
+LLPS002169,p0524;p0522,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001788,p0001;p0522,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001809,p0522;p0521,False,not a single-protein system without nucleic acids
+LLPS001808,p0522;p0521,False,not a single-protein system without nucleic acids
+LLPS001796,p0522;p0521,False,not a single-protein system without nucleic acids
+LLPS001807,p0522;p0521,False,not a single-protein system without nucleic acids
+LLPS001795,p0522;p0521,False,not a single-protein system without nucleic acids
+LLPS001937,p0523;p0521,False,not a single-protein system without nucleic acids
+LLPS001936,p0523;p0521,False,not a single-protein system without nucleic acids
+LLPS001755,p0427,False,no annotated parent IDR
+LLPS002287,p0427,False,not a single-protein system without nucleic acids
+LLPS002762,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS002185,p0032;p0426,False,not a single-protein system without nucleic acids
+LLPS001763,p0417,True,eligible IDR coverage
+LLPS001951,p0418,True,eligible IDR coverage
+LLPS001665,p0420,False,no annotated parent IDR
+LLPS001774,p0421,True,eligible IDR coverage
+LLPS001944,p0422,True,eligible IDR coverage
+LLPS001879,p0423,False,missing sequence or nonstandard amino acids
+LLPS001762,p0424,False,no annotated parent IDR
+LLPS001958,p0528,False,no annotated parent IDR
+LLPS001745,p0529,False,no annotated parent IDR
+LLPS002452,p0247,False,not a single-protein system without nucleic acids
+LLPS002208,p0530,False,not a single-protein system without nucleic acids
+LLPS002209,p0531,False,not a single-protein system without nucleic acids
+LLPS002210,p0033,False,not a single-protein system without nucleic acids
+LLPS002205,p0530,False,not a single-protein system without nucleic acids
+LLPS002254,p0530,False,not a single-protein system without nucleic acids
+LLPS002199,p0530,False,not a single-protein system without nucleic acids
+LLPS002206,p0531,False,not a single-protein system without nucleic acids
+LLPS002255,p0531,False,not a single-protein system without nucleic acids
+LLPS002200,p0531,False,not a single-protein system without nucleic acids
+LLPS002207,p0033,False,not a single-protein system without nucleic acids
+LLPS002256,p0033,False,not a single-protein system without nucleic acids
+LLPS002201,p0033,False,not a single-protein system without nucleic acids
+LLPS001696,p0002;p0355,False,not a single-protein system without nucleic acids
+LLPS001700,p0002;p0390,False,not a single-protein system without nucleic acids
+LLPS001708,p0002;p0355,False,not a single-protein system without nucleic acids
+LLPS001698,p0002;p0355,False,not a single-protein system without nucleic acids
+LLPS001694,p0002;p0355,False,not a single-protein system without nucleic acids
+LLPS001693,p0002;p0355,False,not a single-protein system without nucleic acids
+LLPS001691,p0002;p0355,False,not a single-protein system without nucleic acids
+LLPS001699,p0002;p0390;p0355,False,not a single-protein system without nucleic acids
+LLPS001695,p0002;p0355;p0390,False,not a single-protein system without nucleic acids
+LLPS001697,p0002;p0355,False,not a single-protein system without nucleic acids
+LLPS001692,p0002;p0355,False,not a single-protein system without nucleic acids
+LLPS001707,p0002,True,eligible IDR coverage
+LLPS001690,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001561,p0472,False,no annotated parent IDR
+LLPS001563,p0472,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001568,p0472;p0473,False,not a single-protein system without nucleic acids
+LLPS001564,p0472;p0473,False,not a single-protein system without nucleic acids
+LLPS001565,p0472;p0473,False,not a single-protein system without nucleic acids
+LLPS001567,p0472;p0473,False,not a single-protein system without nucleic acids
+LLPS001566,p0472;p0473,False,not a single-protein system without nucleic acids
+LLPS000007,p0001,True,eligible IDR coverage
+LLPS001781,p0001,False,construct does not map uniquely and exactly to parent
+LLPS001782,p0001,False,construct does not map uniquely and exactly to parent
+LLPS001780,p0001,False,construct does not map uniquely and exactly to parent
+LLPS001783,p0486,False,not a natural protein
+LLPS001784,p0487,False,not a natural protein
+LLPS001785,p0001,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001767,p0112,False,no annotated parent IDR
+LLPS001768,p0112,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001770,p0112;p0112,False,not a single-protein system without nucleic acids
+LLPS001544,p0413;p0415,False,not a single-protein system without nucleic acids
+LLPS001652,p0414;p0416,False,not a single-protein system without nucleic acids
+LLPS001543,p0413,True,eligible IDR coverage
+LLPS001651,p0414,True,eligible IDR coverage
+LLPS002065,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002066,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002064,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002073,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002365,p0032,False,not a single-protein system without nucleic acids
+LLPS002374,p0032,False,not a single-protein system without nucleic acids
+LLPS002377,p0032,False,not a single-protein system without nucleic acids
+LLPS002378,p0032,False,not a single-protein system without nucleic acids
+LLPS001933,p0471,False,no annotated parent IDR
+LLPS002154,p0467,False,no annotated parent IDR
+LLPS002152,p0467,False,no annotated parent IDR
+LLPS002153,p0467,False,no annotated parent IDR
+LLPS002095,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS000325,p0020,True,eligible IDR coverage
+LLPS002534,p0020;p0043,False,not a single-protein system without nucleic acids
+LLPS002212,p0020,False,not a single-protein system without nucleic acids
+LLPS002214,p0020,False,not a single-protein system without nucleic acids
+LLPS002533,p0020,False,not a single-protein system without nucleic acids
+LLPS001540,p0015;p0014,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001541,p0015;p0014,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001537,p0015;p0014,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001538,p0015;p0014,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001527,p0015;p0014,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001529,p0015;p0014,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001528,p0015;p0014,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001530,p0015;p0014,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002487,p0375,False,not a single-protein system without nucleic acids
+LLPS002337,p0375,False,not a single-protein system without nucleic acids
+LLPS002383,p0375,False,not a single-protein system without nucleic acids
+LLPS002397,p0375,False,not a single-protein system without nucleic acids
+LLPS002402,p0375,False,not a single-protein system without nucleic acids
+LLPS002412,p0375,False,not a single-protein system without nucleic acids
+LLPS002451,p0375,False,not a single-protein system without nucleic acids
+LLPS002401,p0375,False,not a single-protein system without nucleic acids
+LLPS002505,p0375,False,not a single-protein system without nucleic acids
+LLPS002507,p0375,False,not a single-protein system without nucleic acids
+LLPS002506,p0375,False,not a single-protein system without nucleic acids
+LLPS002372,p0375,False,not a single-protein system without nucleic acids
+LLPS002371,p0380,False,not a single-protein system without nucleic acids
+LLPS002367,p0375,False,not a single-protein system without nucleic acids
+LLPS002366,p0375,False,not a single-protein system without nucleic acids
+LLPS002368,p0375,False,not a single-protein system without nucleic acids
+LLPS002369,p0375,False,not a single-protein system without nucleic acids
+LLPS002370,p0375,False,not a single-protein system without nucleic acids
+LLPS002491,p0375;p0124,False,not a single-protein system without nucleic acids
+LLPS002492,p0375;p0382,False,not a single-protein system without nucleic acids
+LLPS002495,p0375;p0117,False,not a single-protein system without nucleic acids
+LLPS002493,p0375;p0126,False,not a single-protein system without nucleic acids
+LLPS002494,p0375;p0383,False,not a single-protein system without nucleic acids
+LLPS002496,p0375;p0123,False,not a single-protein system without nucleic acids
+LLPS002497,p0375;p0112,False,not a single-protein system without nucleic acids
+LLPS002501,p0375;p0023,False,not a single-protein system without nucleic acids
+LLPS002489,p0375;p0002,False,not a single-protein system without nucleic acids
+LLPS002502,p0375;p0127,False,not a single-protein system without nucleic acids
+LLPS002498,p0375;p0007,False,not a single-protein system without nucleic acids
+LLPS002503,p0375;p0379,False,not a single-protein system without nucleic acids
+LLPS002504,p0375;p0379,False,not a single-protein system without nucleic acids
+LLPS001716,p0375,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001725,p0375,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001722,p0375,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001723,p0375,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001721,p0375,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001726,p0380,True,eligible IDR coverage
+LLPS002150,p0300,True,eligible IDR coverage
+LLPS001607,p0464,False,no annotated parent IDR
+LLPS001779,p0001;p0463,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002077,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002075,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002181,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS002182,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS002198,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS002386,p0412,False,not a single-protein system without nucleic acids
+LLPS002381,p0412,False,not a single-protein system without nucleic acids
+LLPS002407,p0412,False,not a single-protein system without nucleic acids
+LLPS002389,p0412,False,not a single-protein system without nucleic acids
+LLPS002394,p0412,False,not a single-protein system without nucleic acids
+LLPS002390,p0412,False,not a single-protein system without nucleic acids
+LLPS002387,p0412,False,not a single-protein system without nucleic acids
+LLPS002388,p0412,False,not a single-protein system without nucleic acids
+LLPS002395,p0412,False,not a single-protein system without nucleic acids
+LLPS002391,p0412,False,not a single-protein system without nucleic acids
+LLPS002392,p0412,False,not a single-protein system without nucleic acids
+LLPS002393,p0412,False,not a single-protein system without nucleic acids
+LLPS002535,p0412,False,not a single-protein system without nucleic acids
+LLPS001949,p0513;p0514,False,not a single-protein system without nucleic acids
+LLPS001947,p0513;p0514,False,not a single-protein system without nucleic acids
+LLPS001948,p0513;p0514,False,not a single-protein system without nucleic acids
+LLPS001946,p0513;p0514,False,not a single-protein system without nucleic acids
+LLPS001789,p0458,False,no annotated parent IDR
+LLPS001791,p0458,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001793,p0458,False,no annotated parent IDR
+LLPS001792,p0458,False,no annotated parent IDR
+LLPS001938,p0500,True,eligible IDR coverage
+LLPS001551,p0457,False,no annotated parent IDR
+LLPS001545,p0457,False,no annotated parent IDR
+LLPS001554,p0457,False,no annotated parent IDR
+LLPS001547,p0457,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002470,p0375,False,not a single-protein system without nucleic acids
+LLPS002454,p0375,False,not a single-protein system without nucleic acids
+LLPS002458,p0375,False,not a single-protein system without nucleic acids
+LLPS002460,p0375,False,not a single-protein system without nucleic acids
+LLPS002456,p0375,False,not a single-protein system without nucleic acids
+LLPS002483,p0375,False,not a single-protein system without nucleic acids
+LLPS002382,p0375,False,not a single-protein system without nucleic acids
+LLPS002484,p0375;p0377,False,not a single-protein system without nucleic acids
+LLPS001711,p0375,False,construct does not map uniquely and exactly to parent
+LLPS001713,p0375,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001714,p0375,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001666,p0378;p0375,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001712,p0375,True,eligible IDR coverage
+LLPS002556,p0410,False,not a single-protein system without nucleic acids
+LLPS002552,p0410,False,not a single-protein system without nucleic acids
+LLPS002555,p0410,False,not a single-protein system without nucleic acids
+LLPS001865,p0410;p0033,False,not a single-protein system without nucleic acids
+LLPS001875,p0410;p0129,False,not a single-protein system without nucleic acids
+LLPS001864,p0410;p0128,False,not a single-protein system without nucleic acids
+LLPS002348,p0410,False,not a single-protein system without nucleic acids
+LLPS002333,p0410,False,not a single-protein system without nucleic acids
+LLPS002332,p0410,False,not a single-protein system without nucleic acids
+LLPS002331,p0410,False,not a single-protein system without nucleic acids
+LLPS002330,p0410,False,not a single-protein system without nucleic acids
+LLPS002334,p0410,False,not a single-protein system without nucleic acids
+LLPS002335,p0410,False,not a single-protein system without nucleic acids
+LLPS002336,p0410,False,not a single-protein system without nucleic acids
+LLPS001876,p0410;p0411,False,not a single-protein system without nucleic acids
+LLPS001877,p0410;p0411,False,not a single-protein system without nucleic acids
+LLPS002403,p0410,False,not a single-protein system without nucleic acids
+LLPS002404,p0410,False,not a single-protein system without nucleic acids
+LLPS002189,p0410;p0411,False,not a single-protein system without nucleic acids
+LLPS002558,p0410;p0033,False,not a single-protein system without nucleic acids
+LLPS002559,p0410;p0129,False,not a single-protein system without nucleic acids
+LLPS002557,p0410;p0128,False,not a single-protein system without nucleic acids
+LLPS002350,p0410;p0033,False,not a single-protein system without nucleic acids
+LLPS002351,p0410;p0129,False,not a single-protein system without nucleic acids
+LLPS002349,p0410;p0128,False,not a single-protein system without nucleic acids
+LLPS002560,p0410;p0033,False,not a single-protein system without nucleic acids
+LLPS001843,p0410,True,eligible IDR coverage
+LLPS000519,p0033,False,no annotated parent IDR
+LLPS001825,p0410,True,eligible IDR coverage
+LLPS001842,p0410,True,eligible IDR coverage
+LLPS001823,p0410,False,construct does not map uniquely and exactly to parent
+LLPS001822,p0410,False,construct does not map uniquely and exactly to parent
+LLPS001824,p0410,False,construct does not map uniquely and exactly to parent
+LLPS001827,p0410,False,construct does not map uniquely and exactly to parent
+LLPS001650,p0408;p0409,False,not a single-protein system without nucleic acids
+LLPS001649,p0408,False,no annotated parent IDR
+LLPS001648,p0408,False,no annotated parent IDR
+LLPS001667,p0504,True,eligible IDR coverage
+LLPS001668,p0504;p0505,False,not a single-protein system without nucleic acids
+LLPS001669,p0504;p0506,False,not a single-protein system without nucleic acids
+LLPS001670,p0504;p0507,False,not a single-protein system without nucleic acids
+LLPS001675,p0504;p0508,False,not a single-protein system without nucleic acids
+LLPS001673,p0504;p0509,False,not a single-protein system without nucleic acids
+LLPS002443,p0504,False,not a single-protein system without nucleic acids
+LLPS002258,p0412,False,not a single-protein system without nucleic acids
+LLPS002259,p0412,False,not a single-protein system without nucleic acids
+LLPS002294,p0412,False,not a single-protein system without nucleic acids
+LLPS002881,p0412,False,not a single-protein system without nucleic acids
+LLPS002356,p0412,False,not a single-protein system without nucleic acids
+LLPS002469,p0412,False,not a single-protein system without nucleic acids
+LLPS002354,p0412,False,not a single-protein system without nucleic acids
+LLPS002353,p0412,False,not a single-protein system without nucleic acids
+LLPS002355,p0412,False,not a single-protein system without nucleic acids
+LLPS002358,p0412,False,not a single-protein system without nucleic acids
+LLPS002357,p0412,False,not a single-protein system without nucleic acids
+LLPS002359,p0412,False,not a single-protein system without nucleic acids
+LLPS002882,p0412,False,not a single-protein system without nucleic acids
+LLPS002883,p0412,False,not a single-protein system without nucleic acids
+LLPS002884,p0412,False,not a single-protein system without nucleic acids
+LLPS001613,p0453,False,no annotated parent IDR
+LLPS002178,p0566,False,not a natural protein
+LLPS002406,p0027,False,not a single-protein system without nucleic acids
+LLPS002162,p0391,False,not a natural protein
+LLPS002167,p0064,False,not a natural protein
+LLPS002159,p0066,False,not a natural protein
+LLPS002166,p0392,False,not a natural protein
+LLPS002156,p0066,False,not a natural protein
+LLPS002158,p0066,False,not a natural protein
+LLPS002133,p0077,False,not a natural protein
+LLPS002134,p0077,False,not a natural protein
+LLPS002157,p0066,False,not a natural protein
+LLPS002160,p0066,False,not a natural protein
+LLPS001578,p0056,False,not a natural protein
+LLPS001746,p0095,False,not a natural protein
+LLPS001747,p0393,False,not a natural protein
+LLPS002163,p0067,False,not a natural protein
+LLPS002161,p0066,False,not a natural protein
+LLPS002135,p0077,False,not a natural protein
+LLPS002168,p0064,False,not a natural protein
+LLPS001748,p0394,False,not a natural protein
+LLPS001750,p0395,False,not a natural protein
+LLPS001749,p0396,False,not a natural protein
+LLPS002165,p0397,False,not a natural protein
+LLPS002164,p0065,False,not a natural protein
+LLPS002532,p0023,False,not a single-protein system without nucleic acids
+LLPS002526,p0023,False,not a single-protein system without nucleic acids
+LLPS002530,p0023,False,not a single-protein system without nucleic acids
+LLPS002531,p0023,False,not a single-protein system without nucleic acids
+LLPS002524,p0023,False,not a single-protein system without nucleic acids
+LLPS002525,p0023,False,not a single-protein system without nucleic acids
+LLPS002539,p0023,False,not a single-protein system without nucleic acids
+LLPS002537,p0023,False,not a single-protein system without nucleic acids
+LLPS002538,p0023,False,not a single-protein system without nucleic acids
+LLPS002342,p0023,False,not a single-protein system without nucleic acids
+LLPS002340,p0023,False,not a single-protein system without nucleic acids
+LLPS002341,p0023,False,not a single-protein system without nucleic acids
+LLPS002527,p0023,False,not a single-protein system without nucleic acids
+LLPS002528,p0023,False,not a single-protein system without nucleic acids
+LLPS002343,p0023,False,not a single-protein system without nucleic acids
+LLPS002344,p0023,False,not a single-protein system without nucleic acids
+LLPS002529,p0023,False,not a single-protein system without nucleic acids
+LLPS002345,p0023,False,not a single-protein system without nucleic acids
+LLPS002087,p0023,False,construct does not map uniquely and exactly to parent
+LLPS002088,p0023,False,tested construct does not overlap an annotated IDR
+LLPS002089,p0023,True,eligible IDR coverage
+LLPS002090,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002091,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002092,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002093,p0023,False,construct does not map uniquely and exactly to parent
+LLPS002094,p0023,False,construct does not map uniquely and exactly to parent
+LLPS001679,p0208,True,eligible IDR coverage
+LLPS001570,p0403;p0404;p0405;p0406;p0407,False,not a single-protein system without nucleic acids
+LLPS001571,p0403;p0404;p0405;p0406;p0407,False,not a single-protein system without nucleic acids
+LLPS001572,p0404;p0405;p0406;p0407,False,not a single-protein system without nucleic acids
+LLPS001574,p0404;p0405;p0406;p0407,False,not a single-protein system without nucleic acids
+LLPS001644,p0399,False,not a natural protein
+LLPS001647,p0402,False,not a natural protein
+LLPS001645,p0401,False,not a natural protein
+LLPS001646,p0400,False,not a natural protein
+LLPS001903,p0454,True,eligible IDR coverage
+LLPS001911,p0454,True,eligible IDR coverage
+LLPS001913,p0454,False,construct does not map uniquely and exactly to parent
+LLPS001915,p0454,True,eligible IDR coverage
+LLPS001906,p0454;p0455,False,not a single-protein system without nucleic acids
+LLPS001912,p0454;p0455,False,not a single-protein system without nucleic acids
+LLPS001914,p0454;p0455,False,not a single-protein system without nucleic acids
+LLPS001916,p0454;p0455,False,not a single-protein system without nucleic acids
+LLPS001907,p0454;p0455,False,not a single-protein system without nucleic acids
+LLPS001904,p0454;p0455,False,not a single-protein system without nucleic acids
+LLPS001905,p0454;p0455,False,not a single-protein system without nucleic acids
+LLPS001910,p0454;p0109;p0455,False,not a single-protein system without nucleic acids
+LLPS001908,p0454;p0455;p0456,False,not a single-protein system without nucleic acids
+LLPS001909,p0454;p0455;p0456,False,not a single-protein system without nucleic acids
+LLPS002071,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS002076,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002545,p0412,False,not a single-protein system without nucleic acids
+LLPS002546,p0412,False,not a single-protein system without nucleic acids
+LLPS002547,p0412,False,not a single-protein system without nucleic acids
+LLPS002548,p0412,False,not a single-protein system without nucleic acids
+LLPS002318,p0412,False,not a single-protein system without nucleic acids
+LLPS002262,p0412,False,not a single-protein system without nucleic acids
+LLPS002263,p0412,False,not a single-protein system without nucleic acids
+LLPS002272,p0412,False,not a single-protein system without nucleic acids
+LLPS002339,p0412,False,not a single-protein system without nucleic acids
+LLPS002315,p0412,False,not a single-protein system without nucleic acids
+LLPS002313,p0412,False,not a single-protein system without nucleic acids
+LLPS002314,p0412,False,not a single-protein system without nucleic acids
+LLPS002317,p0412,False,not a single-protein system without nucleic acids
+LLPS002312,p0412,False,not a single-protein system without nucleic acids
+LLPS002316,p0412,False,not a single-protein system without nucleic acids
+LLPS002311,p0412,False,not a single-protein system without nucleic acids
+LLPS001775,p0563,False,not a natural protein
+LLPS001776,p0564,False,not a natural protein
+LLPS001928,p0565,False,not a natural protein
+LLPS001621,p0555;p0002,False,not a single-protein system without nucleic acids
+LLPS001619,p0555;p0002,False,not a single-protein system without nucleic acids
+LLPS001709,p0002;p0556,False,not a single-protein system without nucleic acids
+LLPS001620,p0555,True,eligible IDR coverage
+LLPS001618,p0555,False,tested construct does not overlap an annotated IDR
+LLPS001079,p0258,False,no annotated parent IDR
+LLPS002179,p0370,False,no annotated parent IDR
+LLPS001831,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001833,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001835,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001869,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001867,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001870,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001871,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001872,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001873,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001866,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001874,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS001868,p0410;p0410,False,not a single-protein system without nucleic acids
+LLPS002219,p0562,False,not a single-protein system without nucleic acids
+LLPS001761,p0562;p0410,False,not a single-protein system without nucleic acids
+LLPS002220,p0562;p0410,False,not a single-protein system without nucleic acids
+LLPS002217,p0562;p0410,False,not a single-protein system without nucleic acids
+LLPS001836,p0410,True,eligible IDR coverage
+LLPS001830,p0410,True,eligible IDR coverage
+LLPS001832,p0410,True,eligible IDR coverage
+LLPS001834,p0410,True,eligible IDR coverage
+LLPS001858,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001854,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001845,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001846,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001860,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001859,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001861,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001862,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001844,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001856,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001847,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001848,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001849,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001850,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001851,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001852,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001853,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001863,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001857,p0410,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001923,p0490,False,no annotated parent IDR
+LLPS001925,p0490;p0491,False,not a single-protein system without nucleic acids
+LLPS002273,p0492,False,not a single-protein system without nucleic acids
+LLPS002379,p0490,False,not a single-protein system without nucleic acids
+LLPS002465,p0490,False,not a single-protein system without nucleic acids
+LLPS002286,p0490,False,not a single-protein system without nucleic acids
+LLPS001924,p0490;p0002,False,not a single-protein system without nucleic acids
+LLPS002014,p0547;p0001;p0557,False,not a single-protein system without nucleic acids
+LLPS002012,p0547;p0001;p0557,False,not a single-protein system without nucleic acids
+LLPS002013,p0547;p0001,False,not a single-protein system without nucleic acids
+LLPS001682,p0002,True,eligible IDR coverage
+LLPS001686,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001684,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001685,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001616,p0557,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001617,p0557,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001778,p0001;p0557,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002011,p0547;p0001,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002409,p0412,False,not a single-protein system without nucleic acids
+LLPS002410,p0412,False,not a single-protein system without nucleic acids
+LLPS002411,p0412;p0558,False,not a single-protein system without nucleic acids
+LLPS002568,p0551,False,not a single-protein system without nucleic acids
+LLPS002362,p0551,False,not a single-protein system without nucleic acids
+LLPS001759,p0553,False,no annotated parent IDR
+LLPS002467,p0412,False,not a single-protein system without nucleic acids
+LLPS002279,p0412,False,not a single-protein system without nucleic acids
+LLPS002278,p0412,False,not a single-protein system without nucleic acids
+LLPS002274,p0412,False,not a single-protein system without nucleic acids
+LLPS002380,p0412,False,not a single-protein system without nucleic acids
+LLPS002385,p0412,False,not a single-protein system without nucleic acids
+LLPS002405,p0412,False,not a single-protein system without nucleic acids
+LLPS001898,p0412;p0117,False,not a single-protein system without nucleic acids
+LLPS001900,p0412;p0023,False,not a single-protein system without nucleic acids
+LLPS001896,p0412;p0002,False,not a single-protein system without nucleic acids
+LLPS001899,p0412;p0117,False,not a single-protein system without nucleic acids
+LLPS001901,p0412;p0023,False,not a single-protein system without nucleic acids
+LLPS001897,p0412;p0002,False,not a single-protein system without nucleic acids
+LLPS001886,p0412,True,eligible IDR coverage
+LLPS001764,p0117,True,eligible IDR coverage
+LLPS000420,p0023,True,eligible IDR coverage
+LLPS001705,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001706,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001704,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001992,p0542;p0543;p0544;p0546,False,not a single-protein system without nucleic acids
+LLPS001993,p0542;p0543;p0544;p0546,False,not a single-protein system without nucleic acids
+LLPS001984,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS001987,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS001988,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS001989,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS001990,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS001991,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS001994,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS001995,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS001996,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS001999,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS002000,p0542;p0543;p0544,False,not a single-protein system without nucleic acids
+LLPS002098,p0023,True,eligible IDR coverage
+LLPS002100,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002101,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002102,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002103,p0023,False,"fusion, mutation, engineered repeat or PTM"
+LLPS001569,p0540,False,not a natural protein
+LLPS001744,p0539,False,not a natural protein
+LLPS002441,p0031;p0539,False,not a single-protein system without nucleic acids
+LLPS002437,p0538;p0540,False,not a single-protein system without nucleic acids
+LLPS002439,p0537;p0538,False,not a single-protein system without nucleic acids
+LLPS002442,p0031;p0539,False,not a single-protein system without nucleic acids
+LLPS002440,p0031,False,not a single-protein system without nucleic acids
+LLPS002438,p0537,False,not a single-protein system without nucleic acids
+LLPS001811,p0537;p0540,False,not a single-protein system without nucleic acids
+LLPS001810,p0538;p0540,False,not a single-protein system without nucleic acids
+LLPS002436,p0538,False,not a single-protein system without nucleic acids
+LLPS002435,p0539,False,not a single-protein system without nucleic acids
+LLPS002773,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002768,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002767,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS002769,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002774,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002569,p0354;p0032,False,not a single-protein system without nucleic acids
+LLPS002839,p0032,False,not a single-protein system without nucleic acids
+LLPS002837,p0354;p0032,False,not a single-protein system without nucleic acids
+LLPS002834,p0354;p0032,False,not a single-protein system without nucleic acids
+LLPS002840,p0032,False,not a single-protein system without nucleic acids
+LLPS002838,p0354;p0032,False,not a single-protein system without nucleic acids
+LLPS002835,p0354;p0032,False,not a single-protein system without nucleic acids
+LLPS002720,p0157,True,eligible IDR coverage
+LLPS002721,p0157,True,eligible IDR coverage
+LLPS002703,p0347,True,eligible IDR coverage
+LLPS002578,p0575,True,eligible IDR coverage
+LLPS002577,p0575,True,eligible IDR coverage
+LLPS002572,p0576;p0575,False,not a single-protein system without nucleic acids
+LLPS002571,p0576;p0575,False,not a single-protein system without nucleic acids
+LLPS002573,p0576;p0575,False,not a single-protein system without nucleic acids
+LLPS002574,p0576;p0575,False,not a single-protein system without nucleic acids
+LLPS002575,p0576;p0575,False,not a single-protein system without nucleic acids
+LLPS002716,p0578,True,eligible IDR coverage
+LLPS002841,p0577,False,not a single-protein system without nucleic acids
+LLPS002627,p0577,True,eligible IDR coverage
+LLPS002681,p0117,True,eligible IDR coverage
+LLPS002868,p0412,False,not a single-protein system without nucleic acids
+LLPS002727,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS002731,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS002733,p0252;p0268;p0583,False,not a single-protein system without nucleic acids
+LLPS002729,p0252;p0268;p0579;p0580,False,not a single-protein system without nucleic acids
+LLPS002728,p0252;p0268;p0579;p0580,False,not a single-protein system without nucleic acids
+LLPS002730,p0252;p0268;p0579;p0580;p0583,False,not a single-protein system without nucleic acids
+LLPS002705,p0579;p0580,False,not a single-protein system without nucleic acids
+LLPS002723,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS002724,p0252;p0268,False,not a single-protein system without nucleic acids
+LLPS002725,p0252;p0581,False,not a single-protein system without nucleic acids
+LLPS002726,p0252;p0582,False,not a single-protein system without nucleic acids
+LLPS002732,p0252;p0268;p0579;p0580,False,not a single-protein system without nucleic acids
+LLPS002632,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002815,p0032,False,not a single-protein system without nucleic acids
+LLPS002814,p0032,False,not a single-protein system without nucleic acids
+LLPS002810,p0032,False,not a single-protein system without nucleic acids
+LLPS002813,p0032,False,not a single-protein system without nucleic acids
+LLPS002812,p0032,False,not a single-protein system without nucleic acids
+LLPS002817,p0032;p0007,False,not a single-protein system without nucleic acids
+LLPS002794,p0032,False,not a single-protein system without nucleic acids
+LLPS002816,p0032;p0375,False,not a single-protein system without nucleic acids
+LLPS002776,p0032;p0587,False,not a single-protein system without nucleic acids
+LLPS002780,p0032;p0007,False,not a single-protein system without nucleic acids
+LLPS002778,p0032;p0375,False,not a single-protein system without nucleic acids
+LLPS002779,p0032;p0383,False,not a single-protein system without nucleic acids
+LLPS002775,p0032;p0589,False,not a single-protein system without nucleic acids
+LLPS002781,p0032;p0590,False,not a single-protein system without nucleic acids
+LLPS002777,p0032;p0297,False,not a single-protein system without nucleic acids
+LLPS002628,p0002,False,construct does not map uniquely and exactly to parent
+LLPS002629,p0002,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002842,p0412,False,not a single-protein system without nucleic acids
+LLPS002790,p0584,False,no annotated parent IDR
+LLPS002791,p0038,True,eligible IDR coverage
+LLPS002792,p0585,False,no annotated parent IDR
+LLPS002718,p0586,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002570,p0128,True,eligible IDR coverage
+LLPS002717,p0586,False,no annotated parent IDR
+LLPS002847,p0586,False,not a single-protein system without nucleic acids
+LLPS002719,p0027,False,not a natural protein
+LLPS002848,p0027,False,not a single-protein system without nucleic acids
+LLPS002697,p0001,False,construct does not map uniquely and exactly to parent
+LLPS002849,p0032,False,not a single-protein system without nucleic acids
+LLPS002846,p0032,False,not a single-protein system without nucleic acids
+LLPS002770,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002845,p0032,False,not a single-protein system without nucleic acids
+LLPS002760,p0591,True,eligible IDR coverage
+LLPS002761,p0591;p0592,False,not a single-protein system without nucleic acids
+LLPS002867,p0593,False,not a single-protein system without nucleic acids
+LLPS002831,p0593,False,not a single-protein system without nucleic acids
+LLPS002832,p0593,False,not a single-protein system without nucleic acids
+LLPS002873,p0593,False,not a single-protein system without nucleic acids
+LLPS002866,p0593,False,not a single-protein system without nucleic acids
+LLPS002818,p0247,False,not a single-protein system without nucleic acids
+LLPS002820,p0247,False,not a single-protein system without nucleic acids
+LLPS002819,p0247,False,not a single-protein system without nucleic acids
+LLPS002807,p0412,False,not a single-protein system without nucleic acids
+LLPS002879,p0412,False,not a single-protein system without nucleic acids
+LLPS002878,p0412,False,not a single-protein system without nucleic acids
+LLPS002798,p0412,False,not a single-protein system without nucleic acids
+LLPS002806,p0412,False,not a single-protein system without nucleic acids
+LLPS002805,p0412,False,not a single-protein system without nucleic acids
+LLPS002797,p0412,False,not a single-protein system without nucleic acids
+LLPS002804,p0412,False,not a single-protein system without nucleic acids
+LLPS002803,p0412,False,not a single-protein system without nucleic acids
+LLPS002800,p0412,False,not a single-protein system without nucleic acids
+LLPS002799,p0412,False,not a single-protein system without nucleic acids
+LLPS002796,p0412,False,not a single-protein system without nucleic acids
+LLPS002715,p0412,True,eligible IDR coverage
+LLPS002877,p0412,False,not a single-protein system without nucleic acids
+LLPS002875,p0412,False,not a single-protein system without nucleic acids
+LLPS002874,p0412,False,not a single-protein system without nucleic acids
+LLPS002876,p0412,False,not a single-protein system without nucleic acids
+LLPS002821,p0347,False,not a single-protein system without nucleic acids
+LLPS002702,p0594,False,no annotated parent IDR
+LLPS002701,p0594,False,no annotated parent IDR
+LLPS002695,p0595;p0594,False,not a natural protein
+LLPS002694,p0595;p0594,False,not a natural protein
+LLPS002787,p0023,True,eligible IDR coverage
+LLPS002772,p0032,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002782,p0032,False,not a single-protein system without nucleic acids
+LLPS002764,p0032,False,not a single-protein system without nucleic acids
+LLPS002784,p0032,False,not a single-protein system without nucleic acids
+LLPS002783,p0032,False,not a single-protein system without nucleic acids
+LLPS002766,p0032,False,IDR coordinates outside parent sequence: 395-460
+LLPS002786,p0032,False,not a single-protein system without nucleic acids
+LLPS002765,p0032,False,not a single-protein system without nucleic acids
+LLPS002785,p0032,False,not a single-protein system without nucleic acids
+LLPS002674,p0117;p0597,False,not a single-protein system without nucleic acids
+LLPS002685,p0117;p0597,False,not a single-protein system without nucleic acids
+LLPS002688,p0117;p0597,False,not a single-protein system without nucleic acids
+LLPS002686,p0117;p0597,False,not a single-protein system without nucleic acids
+LLPS002676,p0117;p0597,False,not a single-protein system without nucleic acids
+LLPS002669,p0117,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002668,p0117,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002671,p0117;p0002,False,not a single-protein system without nucleic acids
+LLPS002672,p0117;p0002,False,not a single-protein system without nucleic acids
+LLPS002633,p0002;p0597,False,not a single-protein system without nucleic acids
+LLPS002634,p0002;p0597,False,not a single-protein system without nucleic acids
+LLPS002678,p0117;p0598,False,not a single-protein system without nucleic acids
+LLPS002675,p0117;p0597;p0598,False,not a single-protein system without nucleic acids
+LLPS002677,p0117;p0597;p0598,False,not a single-protein system without nucleic acids
+LLPS002690,p0117;p0598,False,not a single-protein system without nucleic acids
+LLPS002635,p0002;p0598,False,not a single-protein system without nucleic acids
+LLPS002689,p0117;p0597;p0598,False,not a single-protein system without nucleic acids
+LLPS002687,p0117;p0597;p0598,False,not a single-protein system without nucleic acids
+LLPS002670,p0117,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002680,p0117;p0598,False,not a single-protein system without nucleic acids
+LLPS002683,p0117,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002673,p0117,False,not a single-protein system without nucleic acids
+LLPS002698,p0129,False,no annotated parent IDR
+LLPS002870,p0129,False,not a single-protein system without nucleic acids
+LLPS002871,p0129,False,not a single-protein system without nucleic acids
+LLPS002852,p0129,False,not a single-protein system without nucleic acids
+LLPS002855,p0129,False,not a single-protein system without nucleic acids
+LLPS002869,p0128,False,not a single-protein system without nucleic acids
+LLPS002850,p0128,False,not a single-protein system without nucleic acids
+LLPS002856,p0129,False,not a single-protein system without nucleic acids
+LLPS002863,p0129,False,not a single-protein system without nucleic acids
+LLPS002699,p0129,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002853,p0129,False,not a single-protein system without nucleic acids
+LLPS002593,p0512,True,eligible IDR coverage
+LLPS002843,p0512,False,not a single-protein system without nucleic acids
+LLPS002588,p0512,False,construct does not map uniquely and exactly to parent
+LLPS002586,p0512,True,eligible IDR coverage
+LLPS002584,p0512,True,eligible IDR coverage
+LLPS002594,p0512,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002596,p0512,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002595,p0512,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002597,p0512,False,"fusion, mutation, engineered repeat or PTM"
+LLPS002608,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS000024,p0002,True,eligible IDR coverage
+LLPS002598,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002599,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002604,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002589,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002600,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002601,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002602,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002587,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002585,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002631,p0002,True,eligible IDR coverage
+LLPS002590,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002605,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002606,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002607,p0512;p0002,False,not a single-protein system without nucleic acids
+LLPS002609,p0512;p0008,False,not a single-protein system without nucleic acids
+LLPS002667,p0599,True,eligible IDR coverage
+LLPS002734,p0601,False,no annotated parent IDR
+LLPS002844,p0601,False,not a single-protein system without nucleic acids
+LLPS002793,p0600,True,eligible IDR coverage
+LLPS002860,p0492,False,not a single-protein system without nucleic acids
+LLPS002859,p0602,False,not a single-protein system without nucleic acids
+LLPS002722,p0492,False,not a natural protein
+LLPS002696,p0602,False,not a natural protein
+LLPS002827,p0492,False,not a single-protein system without nucleic acids
+LLPS002826,p0602,False,not a single-protein system without nucleic acids
+LLPS002862,p0492,False,not a single-protein system without nucleic acids
+LLPS002861,p0602,False,not a single-protein system without nucleic acids
+LLPS002822,p0002,False,not a single-protein system without nucleic acids
+LLPS002857,p0002,False,not a single-protein system without nucleic acids
+LLPS002823,p0002,False,not a single-protein system without nucleic acids
+LLPS002858,p0002,False,not a single-protein system without nucleic acids
+LLPS002825,p0492,False,not a single-protein system without nucleic acids
+LLPS002824,p0602,False,not a single-protein system without nucleic acids
+LLPS002664,p0277,False,no annotated parent IDR
+LLPS002666,p0277,False,no annotated parent IDR
+LLPS002738,p0617,False,not a natural protein
+LLPS002747,p0613,False,not a natural protein
+LLPS002745,p0618,False,not a natural protein
+LLPS002741,p0619,False,not a natural protein

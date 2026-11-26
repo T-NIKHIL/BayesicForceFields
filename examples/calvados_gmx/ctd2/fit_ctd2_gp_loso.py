@@ -18,7 +18,7 @@ JSON, and the pooled comparison against the random 80/20 split.
 
 Run from the repository root:
 
-    python -m examples.calvados_gmx.fit_ctd2_gp_loso [first_fold last_fold]
+    python -m examples.calvados_gmx.ctd2.fit_ctd2_gp_loso [first_fold last_fold]
 """
 
 import io
@@ -34,7 +34,7 @@ from bff.io.logs import Logger
 from bff.qoi.dataset import QoIDataset
 from examples.calvados.fetch_data import RAW, verified_bytes
 from examples.calvados_gmx import run_pilot_openmm as rp
-from examples.calvados_gmx.fit_ctd2_gp import (
+from examples.calvados_gmx.ctd2.fit_ctd2_gp import (
     N_HYPER_MAX,
     SEED,
     TEST_FRACTION,

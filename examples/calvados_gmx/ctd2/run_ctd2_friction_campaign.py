@@ -24,8 +24,8 @@ parent campaign - edit the constants here, not in run_pilot_openmm.
 
 Run from the repository root:
 
-    python -m examples.calvados_gmx.run_ctd2_friction_campaign           # 0,1,2
-    python -m examples.calvados_gmx.run_ctd2_friction_campaign 5 17      # chosen indices
+    python -m examples.calvados_gmx.ctd2.run_ctd2_friction_campaign           # 0,1,2
+    python -m examples.calvados_gmx.ctd2.run_ctd2_friction_campaign 5 17      # chosen indices
 """
 
 import json
@@ -40,9 +40,9 @@ import openmm.app as app
 import openmm.unit as unit
 
 from examples.calvados_gmx import run_pilot_openmm as rp
-from examples.calvados_gmx import run_ctd2_campaign as parent
+from examples.calvados_gmx.ctd2 import run_ctd2_campaign as parent
 
-HERE = rp.HERE
+HERE = Path(__file__).resolve().parent
 OUT = HERE / "campaign_ctd2_friction_0_01"
 
 # Validation protocol: dynamics are 116x faster at the correct friction,

@@ -1,0 +1,36 @@
+accession,name,start,end,length,length_bin,annotation
+D0PV95,LAF-1,1,168,168,100-200,N-terminal R/G-rich disordered region
+Q92804,TAF15,1,180,180,100-200,N-terminal S/Y/Q/G-rich disordered domain
+Q92804,TAF15,181,216,36,<100,disordered RGG repeats
+Q13148,"TDP-43, TDP43",263,414,152,100-200,"C-terminal region (prion-like domain, low complexity, G-rich IDR)"
+Q8SWR8,Ataxin-2,351,750,400,>200,Middle mIDR: prion-like and poly-Q regions
+Q8SWR8,Ataxin-2,900,1084,185,100-200,cIDR: Q/P-rich region
+Q01844,EWS,1,285,285,>200,N-terminal S/Y/Q/G-rich disordered domain
+Q01844,EWS,286,360,75,<100,disordered RGG repeats
+Q9NQI0,DDX4,1,236,236,>200,"IDR with alternating clusters of opposing charge, FG and RG motifs"
+O00571,DDX3,1,168,168,100-200,N-terminal S/K-rich LC IDR containing RG motifs and the EIF4E-binding motif
+Q9TXM1,MEG-3,1,544,544,>200,N-terminal Q/N/S-rich IDR
+P39936,eIF4GII,13,97,85,<100,N-terminal N/Q-rich IDR
+D8V196,cpeb4,1,409,409,>200,N-terminal repetitive LC IDR
+Q16082,HSPB2,147,182,36,<100,C-terminal negatively charged P-rich IDR with RGG motif
+Q9UPQ9,"TNRC6B, GW182",437,1056,620,>200,Disordered N/G/W-rich N-terminal Argonaute binding domain (ABD) with Trp residues in motifs I and II
+O43561,LAT,28,262,235,>200,Disordered cytoplasmic tail with four (phospho)tyrosine residues
+O62011,MUT-16,773,1033,261,>200,C-terminal Q/N/P-rich disordered domain
+P17600,SYN1,421,705,285,>200,P/Q-rich C-terminal IDR with P-rich motifs
+Q8N884,cGAS,1,146,146,100-200,Disordered and positively charged N-terminal region for DNA binding
+Q15648,MED1,948,1574,627,>200,"S-rich IDR, acidic and basic regions"
+O60885,BRD4,674,1351,678,>200,"P/Q-rich IDR, acidic and basic regions"
+Q9A749,RNase E,451,898,448,>200,C-terminal IDR with alternating blocks of positive and negative charges
+P08287,Histone H1,115,225,111,100-200,Highly disordered polycationic C-terminal tail
+O60563,"Cyclin-T1, CYCT1",462,654,193,100-200,IDR with H-rich region (HRD)
+Q13627,DYRK1A,491,686,196,100-200,IDR with H-rich region (HRD)
+Q02794,Std1,1,78,78,<100,N-rich N-terminal IDR
+Q9JIR4,RIM1,505,1206,702,>200,"IDR with P-rich motifs called PRM1, PRM2 and PRM"
+P23771,GATA3,105,260,156,100-200,H/S/P/G-rich IDR
+P03372,ERα,79,174,96,<100,H/S/P/G-rich IDR
+O43781,DYRK3,1,188,188,100-200,Intrinsically disordered P-rich region
+Q92777,SYN2,421,582,162,100-200,P/Q-rich C-terminal IDR with S-tracts
+P78953,Mid1p,1,452,452,>200,"Disordered N-terminal region (expressed in insect cells, so it is hyperphosphorylated)"
+P43243,Matrin-3,1,397,397,>200,N-terminal disordered region
+Q54VP4,HSP48,146,416,271,>200,C-terminal disordered region
+P35972,Nucleoprotein,392,525,134,100-200,C-terminal motif-containing unstructured region
